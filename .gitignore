@@ -1,9 +1,0 @@
-# Ignore Identifier files
-*.Identifier
-
-# Ignore assets
-/images/
-/webfonts/
-
-# Ignore resume
-myresume.pdf
