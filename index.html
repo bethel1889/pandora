@@ -1,379 +1,1187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Web and AI Developer">
-    <meta name="author" content="Ibeagha Bethel Emmanuel">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bethel's Portfolio</title>
 
-    <!-- Webpage Title -->
-    <title>Bethel's Portfolio</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon-logo.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="avatar-img" src="./assets/images/me2.png" alt="Ibeagha Bethel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Ibeagha Bethel</h1>
+
+          <p class="title">Backend developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ibeaghaemmanuel@gmail.com" class="contact-link">ibeaghaemmanuel@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+2348137891382" class="contact-link">+234 (0) 813 789 1382</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/bethel1889" class="contact-link">bethel1889</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Enugu, Nigeria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://x.com/BethelE59132946" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/bethel1889" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href=" www.linkedin.com/in/bethel-emmanuel-399864296" class="social-link">
+              <ion-icon name="logo-LinkedIn"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/bethel_1804/profilecard/?igsh=MWszemoybTA3c2owYg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m Ibeagha Bethel Emmanuel, a Backend Developer and AI enthusiast at TT Consulting Services Ltd. My passion lies in building automation solutions and web applications that drive efficiency and innovation.
+          </p>
             
-            <!-- Image Logo -->
-            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>  -->
+          <p>
+            With a strong foundation in Python, I specialize in deploying scalable backend systems on Linux environments using frameworks like Django, Flask and FastAPI, along with containerization tools like Docker.
+          </p>
+             
+          <p>
+            I also work on automation with tools like Selenium with which I have streamlined processes for web development, testing, and data scraping. My expertise helps teams build scalable solutions and automate repetitive tasks, allowing developers to focus on innovation. As firm believer in Education, I share my knowledge with the community through talks and tutorials.
+          </p>
+        </section>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text page-scroll" href="index.html">Bethel's Portfolio</a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-backend.svg" alt="backend development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  High-quality backend development using Django or Flask and FastAPI, ensuring scalable and efficient systems.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-api.svg" alt="API design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Design & Creation</h4>
+                <p class="service-item-text">
+                  Developing well-structured APIs that allow seamless integration and communication between systems.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-database.svg" alt="database design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Design</h4>
+                <p class="service-item-text">
+                  Designing robust, scalable database architectures to manage and store data efficiently.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-automation.svg" alt="automation icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automation</h4>
+                <p class="service-item-text">
+                  Streamlining processes through advanced automation scripts, reducing manual tasks and boosting productivity.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-ai.svg" alt="AI solutions icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI-Powered Solutions</h4>
+                <p class="service-item-text">
+                  Creating AI-driven tools for intelligent data extraction and process optimization, adhering to ethical standards.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cloud.svg" alt="cloud infrastructure icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Infrastructure</h4>
+                <p class="service-item-text">
+                  Deploying scalable applications on cloud-based infrastructure with Docker, ensuring reliability and performance.
+                </p>
+              </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--<section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a target="_blank" href="https://github.com/bethel1889">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a target="_blank" href="mailto:ibeaghaemmanuel@gmail.com">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-envelope fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
 
-    
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="text-container">
-                        <p style="color: white; font-size: 32px;">Hi there, I'm Bethel!</p>
-                        <h1 class="h1-large">A pythonista, adept at crafting what operates behind the screen.
-                        </h1>
-                        <a style="border-radius:10px;" class="btn-solid-lg page-scroll" href="myresume.pdf">My Resume</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->    
-    <!-- end of header -->
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
 
 
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container first">
-                        <h2>Hi there, I'm Bethel,</h2>
-                        <p>A dedicated Software Developer specializing in creating robust, scalable, and efficient backend solutions for web applications. With expertise in Flask and a bit of React. I am also proficient in  Python GUI development and web automation/scraping.My passion for clean, maintainable code has driven me to work on a variety of projects that showcase my ability to turn complex problems into streamlined solutions.
-                        </p>
-                        <p>
-                        I am passionate about leveraging Python and JavaScript to build powerful backend infrastructures that drive the future of web development. I am always open to learning new technologies and expanding my skill set to stay at the forefront of the industry. Feel free to explore my projects and get in touch if you would like to collaborate or learn more about my work.
-                        </p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container second">
-                        <div class="time">2023 - PRESENT</div>
-                        <h6>Freelance Web and AI Developer </h6>
-                        <ul>
-                            <li>
-                                Working independently to develop and optimize websites, backend systems, and AI-driven applications. Building and maintaining personal projects to experiment with new ideas and techniques, continuously improving and showcasing my skills.                            </li>
-                            <li>
-                                Enrolled in advanced courses and actively learning new technologies to stay updated with the latest trends and best practices in web development, backend development, and AI.
-                            </li>
-                        </ul>
-                        <div class="time">2020 - 2021</div>
-                        <h6>Smartphone Repair Technician [HI-TECH SS&P]</h6>
-                        <ul>
-                            <li>
-                                Diagnosed and repaired mobile devices by troubleshooting hardware and software issues, achieving a 95% customer satisfaction rate. 
-                            </li>
-                            <li>
-                                Managed inventory and parts ordering, ensuring timely availability of necessary components and maintaining a 98% on-time repair rate.
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
 
 
-    <!-- Services -->
-    <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">What I do</h2>
-                    <p class="p-heading">My work includes designing APIs, optimizing databases, and ensuring seamless server-side functionality. Additionally, my experience with web automation and scraping has enabled me to build efficient data gathering and processing tools.</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DATABASE DESIGN</h4>
-                        <p>I design efficient, scalable, and optimized SQL databases. My expertise includes optimizing queries, ensuring data integrity, and creating schemas that support complex functionalities.</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4> BACKEND DEVELOPMENT</h4>
-                        <p>Specializing in Python and Flask, I create robust, scalable, and efficient backend solutions for web applications. My work includes designing APIs, optimizing server performance, and ensuring seamless integration with front-end components.
-                        </p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>WEB AUTOMATION</h4>
-                        <p>
-                            Using tools like Selenium, I build scripts to automate web tasks and scrape data from various sources. These solutions enable efficient data gathering and processing, saving time and providing valuable insights.
-                        </p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of services -->
-
-    <h2 style="text-align: center; margin-bottom: 50px;"class="h2-heading">Skills and Qualifications</h2>
-    <!-- Details -->
-	<div class="split">
-		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row">
-                    <div class="col-lg-12">     
-                        
-                        <!-- Text Container -->
-                        <div class="text-container">
-                            <h2>Why Work With Me</h2>
-                            <p>Strong soft skills make me an effective team player. Excellent communication and problem-solving skills ensure clear collaboration and high-quality work through a critical approach and attention to detail.</p>
-                            <h5>COURSES</h5>
-                            <p>I have completed CS50x, CS50p, and CS50T by Harvard University, gaining comprehensive knowledge and certificates of completion in computer science fundamentals, Python programming, and theoretical computer science concepts.</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am familiar with HTML, CSS, Python, Flask, Django, JavaScript, React, Bootstrap and SQL</p>
-                            
-                            <div class="icons-container">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                                <img src="images/details-icon-react.png" alt="alternative">
-                                <img src="images/details-icon-python.png" alt="alternative">
-                                <img src="images/details-icon-flask.png" alt="alternative">
-                            </div> <!-- end of icons-container -->
-                        </div> <!-- end of text-container -->
-                        <!-- end of text container -->
-
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of split -->
-    <!-- end of details -->
-
-    <!-- Projects -->
-    <h2 style="text-align: center; padding-top: 120px; margin-bottom: 30px;"class="h2-heading" id="projects">My Projects</h2>
-
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-7.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>MapleMatch: </strong> Developed a Flask-based web application with a robust SQLite database, dynamic search functionality, and user authentication to streamline job searches for foreign workers seeking LMIA-approved positions. <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-8.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>ClipVault: </strong>Built a cross-platform clipboard history manager using Python and Tkinter, featuring customizable settings and an intuitive interface for efficient clipboard management.
-                        <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-9.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Vigilia: </strong>Created a Python web automation program with Selenium to monitor and notify users of open appointment slots at a foreign embassy, demonstrating proficiency in solving real-world problems with automation.
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-10.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Pandoras: </strong> Developed a portfolio website to showcase my projects and highlight my technical skills and accomplishments <a class="blue" href="project.html">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of works -->
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray" style="padding-top: 70px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12" style="margin-bottom: 30px;">
-                    <h2>Contact Me</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/contact.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container" style="text-align: left;">
-                        <p>I'm always excited to connect with fellow developers, tech enthusiasts, and potential collaborators. Whether you have a project in mind, need help with a technical challenge, or are interested in collaborating on innovative ideas, I’d love to hear from you. Feel free to reach out via [email/LinkedIn/your preferred contact method], and let’s explore how we can work together to create something amazing!</p>
-                        <ul style="text-decoration: None;">
-                            <li><strong>Gmail: </strong><a target="_blank" href="mailto:ibeaghaemmanuel@gmail.com">ibeaghaemmanuel@gmail.com</a></li>
-                            <li><strong>Phone Number:</strong> +234-813-789-1382</li>
-                            <li><strong>LinkedIn: </strong><a target="_blank" href="https://www.linkedin.com/in/bethel-emmanuel-399864296?trk=contact-info">Bethel Emmanuel</a></li>
-                            <li><strong>Github: </strong><a target="_blank" href="https://github.com/bethel1889/">bethel1889</a></li>
-                            <li><strong>Instagram: </strong>bethel_1804</li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
 
 
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://x.com/BethelE59132946?t=0sg0quQ1eMYsAog9NirRiQ&s=09">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://www.instagram.com/bethel_1804/?utm_source=qr&r=nametag">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="https://github.com/bethel1889/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" href="mailto:ibeaghaemmanuel@gmail.com">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
 
+      <!--
+        - #RESUME
+      -->
 
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">ibeaghabethel</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+      <article class="resume" data-page="resume">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Made By <a class="no-line" href="https://themewagon.com/">Ibeagha Bethel Emmanuel</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+        <header id="my_header">
+          <h2 class="h2 article-title">Resume</h2>
+          <a href="assets/my_resume.pdf" target="_blank" download><img id="my_download_icon" src="assets/images/icon-download.svg"></a>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CS50T:&nbsp;Harvard's Introduction to Understanding Technology</h4>
+              <span>Completed, May 2024</span>
         
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+              <p class="timeline-text">
+                Introductory knowledge on technology-related concepts.  
+                <a href="#" target="_blank">View Certificate</a>
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CS50x[HarardX]:&nbsp;Harvard University's Introduction to Computer Science</h4>
+              <span>Completed, May 2024</span>
+        
+              <p class="timeline-text">
+                Coursework: C (Data Structures & Algorithms, Memory), HTML, CSS.
+                <a href="#" target="_blank">View Certificate</a>
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CS50P[HarardX]:&nbsp;Programming with Python</h4>
+              <span>Completed, May 2024</span>
+        
+              <p class="timeline-text">
+                Coursework: Python (Object-Oriented Programming, Regular Expressions, Unit Testing).
+                <a href="#" target="_blank">View Certificate</a>
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CS50AI[HarardX]:&nbsp;Artificial Intelligence with Python</h4>
+              <span>In Progress</span>
+        
+              <p class="timeline-text">
+                Coursework: Neural Networks, Cybersecurity.
+                <a href="#" target="_blank">View Certificate</a>
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CS50W[HarardX]:&nbsp;Web Programming with Python and JavaScript</h4>
+              <span>In Progress</span>
+        
+              <p class="timeline-text">
+                Coursework: JavaScript, SQL, Flask.
+                <a href="#" target="_blank">View Certificate</a>
+              </p>
+            </li>
+        
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">TT Consulting Services Ltd - Remote</h4>
+              <span> September 2024 - Present | Birmingham, UK</span>
+              <p class="timeline-text">
+                ● Developed and maintained backend APIs using Flask and FastAPI for AI-driven automation projects, improving system efficiency by 15%.
+              </p>
+              <p class="timeline-text">
+                ● Designed and implemented the "Vigilia" script to automate embassy appointment booking, linked to a Google Form for clients to submit their information, reducing manual effort by 70% and increasing booking success rates.
+              </p>
+              <p class="timeline-text">
+                ● Created a script to automate the downloading of Google Form responses using gdown, dynamically generating and naming folders for each client, downloading their uploaded files into the correct folders, and organizing their information in CSV files.
+              </p>
+              <p class="timeline-text">
+                ● Ensured secure API integration with external services, handling user authentication and data encryption to maintain high data security standards.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">HI-TECH SS&P</h4>
+              <span>May 2020 – June 2021 | Benue, Nigeria</span>
+              <p class="timeline-text">
+                ● Diagnosed and repaired mobile devices by troubleshooting hardware and software issues, achieving a 95% customer satisfaction rate.<br>
+                ● Streamlined repair processes by implementing standardized diagnostic procedures, reducing average repair time by 20%.<br>
+                ● Managed inventory and parts ordering, ensuring timely availability of necessary components and maintaining a 98% on-time repair rate.
+              </p>
+            </li>
+
+          </ol>
+
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python [Django, Flask, FastAPI]</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>            
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL, SQLite, Postgress, MongoDB</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript[React, Node]</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!--<ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Application</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Automation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Artificial Intelligence</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+          </ul> -->
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Application</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Automation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Artificial Intelligence</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Maple Match</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Application">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ClipVault</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Automaton</h3>
+
+                <p class="project-category">Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nexus</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vigilia</h3>
+
+                <p class="project-category">Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Organizer</h3>
+
+                <p class="project-category">Automation</p>
+
+              </a>
+            </li>
+
+            <!--<li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pandoras</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Artificial Intelligence">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI web Scraper</h3>
+
+                <p class="project-category">Artificial Intelligence</p>
+
+              </a>
+            </li>-->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198712.81288516165!2d7.2988!3d6.4413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105b0f7ab1d4b879%3A0x23b8aaaf6370f9!2sEnugu%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1647608789441!5m2!1sen!2sng"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+
+          <form action="https://formspree.io/f/manywkva" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
