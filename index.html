@@ -23,6 +23,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+    - Lucide Icons CDN (Replacing IonIcons)
+  -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!--
+    - Anime.js CDN (For Animations)
+   -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
 </head>
 
 <body>
@@ -42,19 +54,19 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img class="avatar-img" src="./assets/images/headshot.png" alt="Ibeagha Bethel" width="80">
+          <img class="avatar-img" src="./assets/images/headshot.png" alt="Ibeagha Bethel Emmanuel" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Ibeagha Bethel">Ibeagha Bethel</h1>
+          <h1 class="name" title="Ibeagha Bethel Emmanuel">Ibeagha Bethel Emmanuel</h1>
 
-          <p class="title">Software developer</p>
+          <p class="title">Software Developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
+          <!-- Lucide Icon: ChevronDown -->
+          <i data-lucide="chevron-down"></i>
         </button>
 
       </div>
@@ -66,61 +78,27 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <!-- Lucide Icon: Mail -->
+              <i data-lucide="mail"></i>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:ibeaghaemmanuel@gmail.com" class="contact-link">ibeaghaemmanuel@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <!-- Lucide Icon: Smartphone -->
+              <i data-lucide="smartphone"></i>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+2348137891382" class="contact-link">+234 813 789 1382</a>
             </div>
-
-          </li>
-          <!--
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-
-              <a href="https://github.com/bethel1889" class="contact-link">github.com/bethel1889</a>
-            </div>
-
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-LinkedIn"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-
-              <a href="https://www.linkedin.com/in/bethel1889/" class="contact-link">linkedin.com/in/bethel1889/</a>
-            </div>
-
-          </li>
-        -->
         </ul>
 
         <div class="separator"></div>
@@ -129,25 +107,29 @@
 
           <li class="social-item">
             <a href="https://x.com/bethel1889" target="_blank" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <!-- Lucide Icon: Twitter -->
+              <i data-lucide="twitter"></i>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/bethel1889" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/bethel1889" target="_blank" class="social-link">
+              <!-- Lucide Icon: Github -->
+              <i data-lucide="github"></i>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://linkedin.com/in/bethel1889" target="_blank" class="social-link">
-              <ion-icon name="logo-LinkedIn"></ion-icon>
+              <!-- Lucide Icon: Linkedin -->
+              <i data-lucide="linkedin"></i>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://instagram.com/bethel_1804/profilecard/?igsh=MWszemoybTA3c2owYg==" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://instagram.com/bethel_1804/profilecard/?igsh=MWszemoybTA3c2owYg==" target="_blank" class="social-link">
+              <!-- Lucide Icon: Instagram -->
+              <i data-lucide="instagram"></i>
             </a>
           </li>
 
@@ -156,10 +138,6 @@
       </div>
 
     </aside>
-
-
-
-
 
     <!--
       - #main-content
@@ -187,9 +165,9 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Gallery</button>
+          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -199,15 +177,11 @@
 
       </nav>
 
-
-
-
-
       <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -215,159 +189,89 @@
 
         <section class="about-text">
           <p>
-            I'm Ibeagha Bethel Emmanuel, a passionate Full-Stack Developer and AI enthusiast I build automation solutions and web applications that drive efficiency and innovation. 
+            I'm Ibeagha Bethel Emmanuel, a passionate Full-Stack Developer and AI enthusiast based between Nigeria and the UK. I specialize in building robust automation solutions and web applications that enhance efficiency and drive innovation.
           </p>
-            
           <p>
-            With a strong foundation in backend technologies, I aim to build scalable and robust systems that make life easier for both developers and users.
+            With a strong foundation in backend technologies like Python (Django, Flask, FastAPI), I focus on creating scalable and efficient systems. My goal is to simplify complex processes and make technology more accessible for both developers and end-users.
           </p>
-             
           <p>
-            As firm believer in Education, I share my knowledge with the community through talks and tutorials.
+            I am a firm believer in continuous learning and community contribution. I enjoy sharing my knowledge through technical talks and tutorials, helping others grow in the field.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- service -->
         <section class="service">
-
           <h3 class="h3 service-title">What I do</h3>
-
           <ul class="service-list">
-
-            <li class="service-item">
+             <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-backend.svg" alt="backend development icon" width="40">
+                 <i data-lucide="code"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Backend Development</h4>
                 <p class="service-item-text">
-                  High-quality backend development using Django or Flask and FastAPI, ensuring scalable and efficient systems.
+                  High-quality backend development using Python (Django, Flask, FastAPI), ensuring scalable and efficient systems.
                 </p>
               </div>
             </li>
-
-            <li class="service-item">
+            <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-api.svg" alt="API design icon" width="40">
+                <i data-lucide="waypoints"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">API Design & Creation</h4>
                 <p class="service-item-text">
-                  Developing well-structured APIs that allow seamless integration and communication between systems.
+                  Developing well-structured RESTful APIs for seamless integration and communication between systems.
                 </p>
               </div>
             </li>
-
-            <li class="service-item">
+            <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-database.svg" alt="database design icon" width="40">
+                <i data-lucide="database"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Database Design</h4>
                 <p class="service-item-text">
-                  Designing robust, scalable database architectures to manage and store data efficiently.
+                  Designing robust, scalable database architectures (SQL, SQLite) to manage and store data efficiently.
                 </p>
               </div>
             </li>
-
-            <li class="service-item">
+            <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-automation.svg" alt="automation icon" width="40">
+                 <i data-lucide="bot"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Automation</h4>
                 <p class="service-item-text">
-                  Streamlining processes through advanced automation scripts, reducing manual tasks and boosting productivity.
+                  Streamlining processes using Python and Selenium, reducing manual tasks and boosting productivity significantly.
                 </p>
               </div>
             </li>
-
-            <li class="service-item">
+            <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-ai.svg" alt="AI solutions icon" width="40">
+                 <i data-lucide="brain-circuit"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">AI-Powered Solutions</h4>
                 <p class="service-item-text">
-                  Creating AI-driven tools for intelligent data extraction and process optimization, adhering to ethical standards.
+                  Creating AI-driven tools for intelligent data extraction and process optimization, focusing on practical applications.
                 </p>
               </div>
             </li>
-
-            <li class="service-item">
+            <li class="service-item" data-animation-target>
               <div class="service-icon-box">
-                <img src="./assets/images/icon-cloud.svg" alt="cloud infrastructure icon" width="40">
+                 <i data-lucide="cloud-cog"></i>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cloud Infrastructure</h4>
                 <p class="service-item-text">
-                  Deploying scalable applications on cloud-based infrastructure with Docker, ensuring reliability and performance.
+                  Deploying scalable applications on cloud platforms using Docker, ensuring reliability and optimal performance.
                 </p>
               </div>
             </li>
-            
           </ul>
-
         </section>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
       </article>
-
-
-
-
 
       <!--
         - #RESUME
@@ -377,477 +281,428 @@
 
         <header id="my_header">
           <h2 class="h2 article-title">Resume</h2>
-          <a href="assets/my_resume.pdf" target="_blank"><img id="my_download_icon" src="assets/images/icon-download.svg"></a>
+           <!-- Styled Download Button -->
+           <a href="assets/my_resume.pdf" target="_blank" download="Ibeagha_Bethel_Resume.pdf" class="resume-download-btn">
+             <i data-lucide="download-cloud"></i>
+             <span>Download CV</span>
+           </a>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <i data-lucide="book-open"></i>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
-
           <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS50T:&nbsp;Harvard's Introduction to Understanding Technology</h4>
-              <span>Completed, May 2024</span>
-        
-              <p class="timeline-text">
-                Introductory knowledge on technology-related concepts.  
-                <a href="https://certificates.cs50.io/d7b180cb-fbbf-40c4-8aee-71d2cfa145a8.pdf?size=letter" target="_blank">View Certificate</a>
-              </p>
+             <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Harvard University (HarvardX - Online)</h4>
+               <span>Completed May 2024 | Cambridge, MA</span>
+               <p class="timeline-text">
+                 <b>CS50T:</b> Introduction to Understanding Technology. <a href="https://certificates.cs50.io/d7b180cb-fbbf-40c4-8aee-71d2cfa145a8.pdf?size=letter" target="_blank">[Certificate]</a><br>
+                 <b>CS50x:</b> Introduction to Computer Science (C, Data Structures, Algos, Memory, HTML, CSS). <a href="https://certificates.cs50.io/94673ec9-0b1f-41e6-b6e8-9c12f40ae271.pdf?size=letter" target="_blank">[Certificate]</a><br>
+                 <b>CS50P:</b> Programming with Python (OOP, Regex, Unit Testing). <a href="https://certificates.cs50.io/5fafa4c8-938e-4856-9b93-7f005cecb6a8.pdf?size=letter" target="_blank">[Certificate]</a><br>
+                 <b>CS50W:</b> Web Programming with Python and JavaScript (In Progress - JS, SQL, Flask).<br>
+                 <b>CS50AI:</b> Artificial Intelligence with Python (In Progress - Neural Networks, Cybersecurity).
+               </p>
             </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS50x[HarardX]:&nbsp;Harvard University's Introduction to Computer Science</h4>
-              <span>Completed, May 2024</span>
-        
-              <p class="timeline-text">
-                Coursework: C (Data Structures & Algorithms, Memory), HTML, CSS.
-                <a href="https://certificates.cs50.io/94673ec9-0b1f-41e6-b6e8-9c12f40ae271.pdf?size=letter" target="_blank">View Certificate</a>
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS50P[HarardX]:&nbsp;Programming with Python</h4>
-              <span>Completed, May 2024</span>
-        
-              <p class="timeline-text">
-                Coursework: Python (Object-Oriented Programming, Regular Expressions, Unit Testing).
-                <a href="https://certificates.cs50.io/5fafa4c8-938e-4856-9b93-7f005cecb6a8.pdf?size=letter" target="_blank">View Certificate</a>
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS50AI[HarardX]:&nbsp;Artificial Intelligence with Python</h4>
-              <span>In Progress</span>
-        
-              <p class="timeline-text">
-                Coursework: Neural Networks, Cybersecurity.
-                <a href="#" target="_blank">View Certificate</a>
-              </p>
-            </li>
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS50W[HarardX]:&nbsp;Web Programming with Python and JavaScript</h4>
-              <span>In Progress</span>
-        
-              <p class="timeline-text">
-                Coursework: JavaScript, SQL, Flask.
-                <a href="#" target="_blank">View Certificate</a>
-              </p>
-            </li>
-        
+            <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">University of Michigan (Coursera Online)</h4>
+                <span>Completed</span>
+                <p class="timeline-text">
+                 Python for Everybody Specialization.
+                 <!-- Add certificate link if available -->
+                </p>
+             </li>
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+               <i data-lucide="briefcase"></i>
             </div>
-
             <h3 class="h3">Experience</h3>
           </div>
-
           <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">TT Consulting Services Ltd - Remote</h4>
-              <span> September 2024 - Present | Birmingham, UK</span>
+            <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Backend and Automation Developer - TT Consulting Services Ltd (Remote)</h4>
+              <span>Sep 2024 – Present | Birmingham, UK</span>
               <p class="timeline-text">
-                ● Developed and maintained backend APIs using Flask and FastAPI for AI-driven automation projects, improving system efficiency by 15%.
-              </p>
-              <p class="timeline-text">
-                ● Designed and implemented the "Vigilia" script to automate embassy appointment booking, linked to a Google Form for clients to submit their information, reducing manual effort by 70% and increasing booking success rates.
-              </p>
-              <p class="timeline-text">
-                ● Created a script to automate the downloading of Google Form responses using gdown, dynamically generating and naming folders for each client, downloading their uploaded files into the correct folders, and organizing their information in CSV files.
-              </p>
-              <p class="timeline-text">
-                ● Ensured secure API integration with external services, handling user authentication and data encryption to maintain high data security standards.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">HI-TECH SS&P</h4>
-              <span>May 2020 – June 2021 | Benue, Nigeria</span>
-              <p class="timeline-text">
-                ● Diagnosed and repaired mobile devices by troubleshooting hardware and software issues, achieving a 95% customer satisfaction rate.<br>
-                ● Streamlined repair processes by implementing standardized diagnostic procedures, reducing average repair time by 20%.<br>
-                ● Managed inventory and parts ordering, ensuring timely availability of necessary components and maintaining a 98% on-time repair rate.
+                Developed and maintained backend APIs (Flask, FastAPI) for AI-driven automation projects, boosting efficiency by 15%. <br>
+                Implemented "Vigilia" script (Selenium) to automate embassy appointment booking via Google Forms, reducing manual effort by 70%. <br>
+                Created a script to automate Google Form response downloading, parsing, and organization into client folders and CSVs. <br>
+                Ensured secure API integration, handling authentication and data encryption.
               </p>
             </li>
-
+            <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Mobile Device Repair Technician - HI-TECH SS&P</h4>
+              <span>May 2020 – Jan 2022 | Benue, Nigeria</span>
+              <p class="timeline-text">
+                Diagnosed and repaired complex hardware/software issues across various mobile devices, achieving 95% customer satisfaction. <br>
+                Streamlined repair processes with standardized diagnostics, reducing average repair time by 20%. <br>
+                Managed inventory and parts ordering, maintaining a 98% on-time repair completion rate.
+              </p>
+            </li>
           </ol>
-
-
         </section>
+
+        <!-- Project Experience Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i data-lucide="folder-git-2"></i> <!-- Or another relevant icon -->
+            </div>
+            <h3 class="h3">Project Experience</h3>
+          </div>
+          <ol class="timeline-list">
+              <!-- Njem Backend Project -->
+              <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">Njem Backend (API for Inter-City Transport Expansion)</h4>
+                <span>Enugu Tech Fest Hackathon Project</span>
+                <p class="timeline-text">
+                  Developed the backend API using Django REST Framework for a transport booking platform, enabling the scaling of the Njem concept to inter-city travel.<br>
+                  Designed and implemented core API endpoints for searching trips (by location, time), viewing available seats, and costing preliminary bookings (PoC stage).<br>
+                  Included database seeding scripts for managing initial application data (terminals, routes, vehicles, sample trips).
+                </p>
+              </li>
+              <!-- EventLink Project -->
+              <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">EventLink (Google DevFest 2024 Speaker Session)</h4>
+                <span>Creator</span>
+                <p class="timeline-text">
+                  Created a Flask web application to enhance event networking, allowing users to join event rooms and connect via LinkedIn profiles.<br>
+                  Showcased as a practical example during an invited talk on "Data-Driven Software Architecture Design" at Google DevFest 2024.<br>
+                  Includes secure room access, attendee profile browsing, and admin features for user role and room status management.
+                </p>
+              </li>
+              <!-- AutoAid Project -->
+              <li class="timeline-item" data-animation-target>
+                  <h4 class="h4 timeline-item-title">AutoAid (Innovate to Impact Hackathon - Coal City University)</h4>
+                  <span>Development Team Lead</span>
+                  <p class="timeline-text">
+                    Led the development team for a Flask application connecting car owners with mechanics, facilitating service discovery and issue reporting.<br>
+                    Guided the team to achieve 1st Place at the hackathon, recognized for technical excellence, innovation, and impact potential.<br>
+                    Features location-based mechanic search, detailed issue reporting forms, user/mechanic profiles, and admin management tools.
+                  </p>
+              </li>
+              <!-- Commerce Project -->
+              <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">Commerce (Harvard CS50W Project)</h4>
+                <span>Developer</span>
+                <p class="timeline-text">
+                  Built a Django-based e-commerce auction site allowing users to create listings, place bids, manage watchlists, and add comments.<br>
+                  Implemented user authentication, database modeling for listings/bids/comments, and dynamic frontend updates.
+                </p>
+              </li>
+              <!-- Maple Match Project -->
+              <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">Maple Match (Harvard CS50x Capstone Project)</h4>
+                <span>Developer</span>
+                <p class="timeline-text">
+                  Developed a Flask-based web application to streamline job searches for foreign workers seeking LMIA-approved positions in Canada.<br>
+                  Features a robust SQLite database (>18,000 listings), user authentication, search/filtering, and secure session management.
+                </p>
+              </li>
+              <!-- Clip Vault Project -->
+              <li class="timeline-item" data-animation-target>
+                <h4 class="h4 timeline-item-title">Clip Vault (Harvard CS50P Capstone Project)</h4>
+                <span>Developer</span>
+                <p class="timeline-text">
+                  Built a lightweight, cross-platform clipboard history manager using Python and Tkinter.<br>
+                  Features efficient tracking, management (delete/copy), customisation (font, history size, theme), and an intuitive user interface.
+                </p>
+              </li>
+          </ol>
+        </section>
+
+         <!-- Leadership Experience Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+               <i data-lucide="users"></i> <!-- Or another relevant icon -->
+            </div>
+            <h3 class="h3">Leadership Experience</h3>
+          </div>
+          <ol class="timeline-list">
+             <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Google DevFest 2024</h4>
+              <span>Invited Speaker | Enugu, Nigeria</span>
+              <p class="timeline-text">
+                 Presented session titled: "Data-Driven Software Architecture Design", showcasing the EventLink project as a case study.
+              </p>
+            </li>
+             <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Innovate to Impact Hackathon</h4>
+              <span>Hackathon Winner (1st Place) & Team Lead | Coal City University</span>
+              <p class="timeline-text">
+                 Led the development team for the winning project, AutoAid, demonstrating leadership and technical execution under pressure.
+              </p>
+            </li>
+             <li class="timeline-item" data-animation-target>
+              <h4 class="h4 timeline-item-title">Enugu Tech Fest Hackathon</h4>
+              <span>Hackathon Team Lead</span>
+              <p class="timeline-text">
+                 Led the team developing the Njem BRT simulation project, coordinating efforts and ensuring project milestones were met during the event.
+              </p>
+            </li>
+          </ol>
+        </section>
+
 
         <section class="skill">
-
           <h3 class="h3 skills-title">My skills</h3>
-
           <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python [Django, Flask, FastAPI]</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>            
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MySQL, SQLite, Postgress, MongoDB</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Programming & Core Concepts</h5></div>
+              <p class="timeline-text">Python (Expert), JavaScript, SQL, Object-Oriented Programming (OOP), Data Structures & Algorithms</p>
             </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Javascript[React, Node]</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Web Development</h5></div>
+              <p class="timeline-text">Django, Flask, FastAPI, RESTful API Design & Development, HTML5, CSS3</p>
             </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Frontend Frameworks</h5></div>
+              <p class="timeline-text">Bootstrap, Tailwind CSS (Basic React)</p>
             </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Automation & Tools</h5></div>
+              <p class="timeline-text">Selenium, Git, GitHub, Linux Environment</p>
             </li>
-
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Databases</h5></div>
+              <p class="timeline-text">Relational Databases (SQLite, SQL), Database Design</p>
+            </li>
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Leadership & Soft Skills</h5></div>
+              <p class="timeline-text">Team Leadership, Technical Mentoring, Communication, Problem-Solving, Adaptability</p>
+            </li>
+            <li class="skills-item" data-animation-target>
+              <div class="title-wrapper"><h5 class="h5">Languages</h5></div>
+              <p class="timeline-text">English: C1 (IELTS Academic: 8.0), German: A1 Certified, French: A2 (DELF)</p>
+            </li>
           </ul>
-
         </section>
-
       </article>
-
-
-
-
 
       <!--
         - #PORTFOLIO
       -->
 
       <article class="portfolio" data-page="portfolio">
-
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
-
         <section class="projects">
-
-          <!-- I hid the div under this comment used to select project category-->
-          <div hidden class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Application</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Automation</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Artificial Intelligence</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-            </ul>
-
-          </div>
-          
           <ul class="project-list">
-            <!-- Project 1-->
-            <li class="project-item active" data-filter-item="" data-category="Web Development">
-              <a href="https://eventlink.pythonanywhere.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-1.png" alt="Maple Match" loading="lazy">
-                </figure>
-                
-                <h3 class="project-title">Event Link</h3>
-                <p class="project-category">A webapp connecting people at events</p>
-
-              </a>
-              <div class="project-buttons">
-                <a href="https://github.com/bethel1889/eventlink.git" target="_blank" class="btn-link source-btn">
-                  <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                  Code</a>
-                <a href="https://eventlink.pythonanywhere.com/" target="_blank" class="btn-link live-btn">
-                  <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                  Site</a>
-              </div>
-            </li>
-
-            <!-- Project 2-->
-            <li class="project-item  active" data-filter-item data-category="Application">
-              <a href="https://autoaid-1ae4.onrender.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Autoaid</h3>
-
-                <p class="project-category">A platform linking mechanics with users facing car troubles.</p>
-
-              </a>
-
-              <div class="project-buttons">
-                <a href="https://github.com/bethel1889/autoaid.git" target="_blank" class="btn-link source-btn">
-                  <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                  Code</a>
-                <a href="https://autoaid-1ae4.onrender.com" target="_blank" class="btn-link live-btn">
-                  <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                  Site</a>
-              </div>
-            </li>
-
-            <!-- Project 3-->
-            <li class="project-item  active" data-filter-item data-category="Automation">
-              <a href="https://maplematch.onrender.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Maple Match</h3>
-
-                <p class="project-category">A web app helping non-Canadians find LMIA-certified opportunities.</p>
+             <!-- Project 1: EventLink -->
+             <li class="project-item active" data-filter-item data-category="web development" data-animation-target>
+                <a href="https://eventlink.pythonanywhere.com/" target="_blank">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="eye"></i> </div>
+                    <img src="./assets/images/project-1.png" alt="Event Link" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">EventLink (Google DevFest 2024)</h3>
+                    <p class="project-category">Web App | Flask | Networking</p>
+                    <p class="project-description">Created a Flask web application to enhance event networking, allowing users to join event rooms and connect via LinkedIn profiles. Showcased as a practical example during an invited talk on "Data-Driven Software Architecture Design".</p>
+                </a>
                 <div class="project-buttons">
-                  <a href="https://github.com/bethel1889/maplematch.git" target="_blank" class="btn-link source-btn">
-                    <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                    Code</a>
-                  <a href="https://maplematch.onrender.com" target="_blank" class="btn-link live-btn">
-                    <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                    Site</a>
+                    <a href="https://github.com/bethel1889/eventlink.git" target="_blank" class="btn-link source-btn"> <i data-lucide="github"></i> Code </a>
+                    <a href="https://eventlink.pythonanywhere.com/" target="_blank" class="btn-link live-btn"> <i data-lucide="link"></i> Site </a>
                 </div>
-              </a>
             </li>
-            <!--Project 4-->
-            <li class="project-item  active" data-filter-item data-category="Web Development">
-              <a href="https://finance-q3ld.onrender.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">A web app for managing stock transactions and portfolios.</p>
+             <!-- Project 2: AutoAid -->
+             <li class="project-item active" data-filter-item data-category="application" data-animation-target>
+                <a href="https://autoaid-1ae4.onrender.com" target="_blank">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="eye"></i> </div>
+                    <img src="./assets/images/project-2.png" alt="AutoAid" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">AutoAid (Innovate to Impact Hackathon Winner)</h3>
+                    <p class="project-category">Web App | Flask | Geolocation</p>
+                    <p class="project-description">Led the development team for this award-winning Flask application connecting car owners with mechanics, featuring location-based search and detailed issue reporting.</p>
+                </a>
                 <div class="project-buttons">
-                  <a href="https://github.com/bethel1889/cs50finance.git" target="_blank" class="btn-link source-btn">
-                    <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                    Code</a>
-                  <a href="https://finance-q3ld.onrender.com/" target="_blank" class="btn-link live-btn">
-                    <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                    Site</a>
+                    <a href="https://github.com/bethel1889/autoaid.git" target="_blank" class="btn-link source-btn"> <i data-lucide="github"></i> Code </a>
+                    <a href="https://autoaid-1ae4.onrender.com" target="_blank" class="btn-link live-btn"> <i data-lucide="link"></i> Site </a>
                 </div>
-              </a>
             </li>
-            <!--Project 5-->
-            <li class="project-item  active" data-filter-item data-category="Automation">
-              <a href="clipvault.exe" download>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Clipvault</h3>
-
-                <p class="project-category">A cross-platform GUI clipboard manager built with Python.</p>
+             <!-- Project 3: Maple Match -->
+             <li class="project-item active" data-filter-item data-category="web development" data-animation-target>
+                <a href="https://maplematch.onrender.com" target="_blank">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="eye"></i> </div>
+                    <img src="./assets/images/project-3.png" alt="Maple Match" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Maple Match (CS50x Capstone)</h3>
+                    <p class="project-category">Web App | Flask | SQLite</p>
+                    <p class="project-description">Developed a Flask-based web application to streamline job searches for foreign workers seeking LMIA-approved positions in Canada, featuring a robust SQLite database and secure session management.</p>
+                </a>
                 <div class="project-buttons">
-                  <a href="https://github.com/bethel1889/clipvault.git" target="_blank" class="btn-link source-btn">
-                    <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                    Code</a>
-                  <a href="clipvault.exe" download target="_blank" class="btn-link live-btn">
-                    <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                    .exe</a>
+                    <a href="https://github.com/bethel1889/maplematch.git" target="_blank" class="btn-link source-btn"> <i data-lucide="github"></i> Code </a>
+                    <a href="https://maplematch.onrender.com" target="_blank" class="btn-link live-btn"> <i data-lucide="link"></i> Site </a>
                 </div>
-              </a>
             </li>
-            <!--Project 6-->
-            <li class="project-item  active" data-filter-item data-category="Automation">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Automaton</h3>
-
-                <p class="project-category">A Python script that automates email sending.</p>
-
-              </a>
-              <div class="project-buttons">
-                <a href="#" target="_blank" class="btn-link source-btn">
-                  <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
-                  Code</a>
-                <a href="#" target="_blank" class="btn-link live-btn">
-                  <ion-icon name="link-outline" role="img" class="md hydrated" aria-label="link outline"></ion-icon>
-                  Site</a>
-              </div>
+             <!-- Project 4: Finance -->
+             <li class="project-item active" data-filter-item data-category="web development" data-animation-target>
+                <a href="https://finance-q3ld.onrender.com/" target="_blank">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="eye"></i> </div>
+                    <img src="./assets/images/project-4.png" alt="Finance App" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Finance (CS50x Project)</h3>
+                    <p class="project-category">Web App | Flask | Stock Trading</p>
+                     <p class="project-description">A web application built with Flask for managing stock transactions and portfolios, allowing users to buy, sell, and track stocks.</p>
+                </a>
+                 <div class="project-buttons">
+                    <a href="https://github.com/bethel1889/cs50finance.git" target="_blank" class="btn-link source-btn"> <i data-lucide="github"></i> Code </a>
+                    <a href="https://finance-q3ld.onrender.com/" target="_blank" class="btn-link live-btn"> <i data-lucide="link"></i> Site </a>
+                </div>
             </li>
-
+             <!-- Project 5: Clip Vault -->
+             <li class="project-item active" data-filter-item data-category="application" data-animation-target>
+                <a href="assets/clipvault.exe" download="ClipVault.exe">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="download"></i> </div>
+                    <img src="./assets/images/project-5.png" alt="Clip Vault" loading="lazy">
+                    </figure>
+                    <h3 class="project-title">Clip Vault (CS50P Capstone)</h3>
+                    <p class="project-category">Desktop App | Python | Tkinter</p>
+                    <p class="project-description">Built a lightweight, cross-platform clipboard history manager using Python and Tkinter, featuring efficient tracking, management, and customization.</p>
+                </a>
+                 <div class="project-buttons">
+                    <a href="https://github.com/bethel1889/clipvault.git" target="_blank" class="btn-link source-btn"> <i data-lucide="github"></i> Code </a>
+                    <a href="assets/clipvault.exe" download="ClipVault.exe" class="btn-link live-btn"> <i data-lucide="download-cloud"></i> .exe </a>
+                </div>
+            </li>
+            <!-- Project 6: Vigilia Automation -->
+             <li class="project-item active" data-filter-item data-category="automation" data-animation-target>
+                <a href="#">
+                    <figure class="project-img">
+                    <div class="project-item-icon-box"> <i data-lucide="terminal-square"></i> </div>
+                    <img src="./assets/images/project-6.png" alt="Vigilia Automation" loading="lazy"> <!-- Placeholder -->
+                    </figure>
+                    <h3 class="project-title">Vigilia Embassy Booking Automation</h3>
+                    <p class="project-category">Automation Script | Python | Selenium</p>
+                     <p class="project-description">Automated embassy appointment booking process using Selenium and Python, integrating with Google Forms for client data input. Significantly reduced manual effort and increased success rates.</p>
+                </a>
+                 <div class="project-buttons">
+                    <a href="#" target="_blank" class="btn-link source-btn disabled"> <i data-lucide="github"></i> Code (Private) </a>
+                 </div>
+            </li>
+            <!-- Project 7: Njem Backend (New) -->
+            <li class="project-item active" data-filter-item data-category="web development" data-animation-target>
+                <a href="#"> <!-- No live site link -->
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <i data-lucide="code-2"></i> <!-- Icon representing backend/API -->
+                        </div>
+                        <img src="./assets/images/project-7.png" alt="Njem Backend" loading="lazy"> <!-- Placeholder image path -->
+                    </figure>
+                    <h3 class="project-title">Njem Backend (Enugu Tech Fest)</h3>
+                    <p class="project-category">API | Django REST Framework</p>
+                    <p class="project-description">Developed backend API for an inter-city transport booking platform. Implemented endpoints for trip search, seat availability, costing, and database seeding.</p>
+                </a>
+                <div class="project-buttons">
+                    <a href="#" target="_blank" class="btn-link source-btn disabled"> <!-- No public code link -->
+                        <i data-lucide="github"></i> Code (Private)
+                    </a>
+                    <!-- No live site button -->
+                </div>
+            </li>
           </ul>
-
         </section>
+      </article>
 
+      <!--
+        - #GALLERY
+      -->
+      <article class="gallery" data-page="gallery">
+        <header>
+          <h2 class="h2 article-title">Gallery</h2>
+        </header>
+        <section class="gallery-grid">
+          <!-- Placeholder Items - Replace src with actual image URLs -->
+          <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=DevFest+2024+Talk" alt="Speaking at Google DevFest 2024" loading="lazy">
+              <figcaption>Speaking Session: Google DevFest 2024</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=Innovate+Hackathon" alt="Innovate to Impact Hackathon Team" loading="lazy">
+              <figcaption>Innovate to Impact Hackathon - Team Lead (Winners)</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=Enugu+Tech+Fest" alt="Enugu Tech Fest Hackathon" loading="lazy">
+              <figcaption>Enugu Tech Fest Hackathon - Team Lead</figcaption>
+            </figure>
+          </div>
+           <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=Event+Placeholder+1" alt="Event Placeholder 1" loading="lazy">
+              <figcaption>Community Event/Workshop</figcaption>
+            </figure>
+          </div>
+           <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=Event+Placeholder+2" alt="Event Placeholder 2" loading="lazy">
+              <figcaption>Conference Networking</figcaption>
+            </figure>
+          </div>
+           <div class="gallery-item" data-animation-target>
+            <figure>
+              <img src="https://via.placeholder.com/400x300.png?text=Event+Placeholder+3" alt="Event Placeholder 3" loading="lazy">
+              <figcaption>Project Showcase</figcaption>
+            </figure>
+          </div>
+          <!-- Add more gallery items as needed -->
+        </section>
       </article>
 
       <!--
         - #CONTACT
       -->
-
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
+             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198712.81288516165!2d7.2988!3d6.4413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105b0f7ab1d4b879%3A0x23b8aaaf6370f9!2sEnugu%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1647608789441!5m2!1sen!2sng"
-              width="400" height="300" loading="lazy"></iframe>
+               width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
-
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
-
           <form action="https://formspree.io/f/manywkva" method="POST" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+              <i data-lucide="send"></i>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
-
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- custom js link -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <!-- Initialize Lucide Icons -->
+   <script>
+      lucide.createIcons();
+   </script>
 
 </body>
-
 </html>
