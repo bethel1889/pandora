@@ -358,6 +358,7 @@ main {
   overflow: hidden;
   transition: max-height var(--transition-2);
   min-width: 250px; /* Ensure a minimum width */
+  width: auto; /* Allow width to adjust */
 }
 
 .sidebar.active {
@@ -383,8 +384,9 @@ main {
 }
 
 .info-content {
-    overflow: hidden; /* Hide overflow text initially */
-    flex-grow: 1; /* Allow content to take available space */
+    overflow: hidden;
+    flex-grow: 1;
+    min-width: 0; /* Allow shrinking for wrapping */
 }
 
 .info-content .name {
@@ -393,9 +395,7 @@ main {
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
-  white-space: nowrap; /* Keep name on one line */
-  /* overflow: hidden; /* Hide overflow if needed */
-  /* text-overflow: ellipsis; /* Add ellipsis if needed */
+  white-space: nowrap; /* Keep name on one line initially */
 }
 
 .info-content .title {
@@ -428,7 +428,7 @@ main {
 .info_more-btn svg {
   width: 18px;
   height: 18px;
-  stroke-width: 2.5; /* Make chevron thicker */
+  stroke-width: 2.5;
 }
 
 .info_more-btn::before {
@@ -484,9 +484,8 @@ main {
 }
 
 .contact-info {
-  /* max-width: calc(100% - 46px); */ /* Let it take available space */
-  width: 100%; /* Changed from fixed calc */
-  overflow: hidden; /* Hide overflowing text */
+  width: 100%;
+  overflow: hidden;
 }
 
 .contact-title {
@@ -499,17 +498,17 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
-  white-space: nowrap;      /* Prevent wrapping */
-  overflow: hidden;         /* Hide overflow */
-  text-overflow: ellipsis;  /* Add ellipsis (...) */
-  display: block;           /* Ensure it takes block space for ellipsis */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 .contact-info address {
   font-style: normal;
 }
 
-.contact-info .contact-link { /* Style links specifically */
+.contact-info .contact-link {
     transition: color var(--transition-1);
 }
 .contact-info .contact-link:hover {
@@ -643,7 +642,7 @@ main {
   width: 40px;
   height: 40px;
   stroke: var(--orange-yellow-crayola);
-  stroke-width: 1.5; /* Adjust stroke if needed */
+  stroke-width: 1.5;
 }
 
 .service-content-box {
@@ -652,7 +651,7 @@ main {
 
 .service-item-title {
   margin-bottom: 7px;
-  text-transform: capitalize; /* Capitalize service titles */
+  text-transform: capitalize;
 }
 
 .service-item-text {
@@ -673,7 +672,7 @@ main {
 #my_header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between title and button */
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -682,7 +681,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--onyx); /* Match social button style */
+  background: var(--onyx);
   color: var(--orange-yellow-crayola);
   padding: 8px 15px;
   border-radius: 8px;
@@ -691,12 +690,14 @@ main {
   font-weight: var(--fw-400);
   box-shadow: var(--shadow-1);
   transition: var(--transition-1);
+  white-space: nowrap;
 }
 
 .resume-download-btn svg {
   width: 16px;
   height: 16px;
   stroke-width: 2;
+  flex-shrink: 0;
 }
 
 .resume-download-btn:hover {
@@ -745,7 +746,6 @@ main {
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
-  text-transform: capitalize; /* Capitalize timeline titles */
 }
 
 .timeline-list span {
@@ -784,7 +784,7 @@ main {
   font-size: var(--fs-7);
 }
 
-.timeline-text b { /* Style bold text for emphasis */
+.timeline-text b {
     font-weight: var(--fw-500);
     color: var(--white-2);
 }
@@ -794,7 +794,7 @@ main {
   display: inline;
   transition: var(--transition-1);
   margin-left: 5px;
-  font-weight: var(--fw-400); /* Make link slightly bolder */
+  font-weight: var(--fw-400);
 }
 
 .timeline-text a:hover {
@@ -822,7 +822,7 @@ main {
 .skill .title-wrapper {
   display: flex;
   align-items: center;
-  gap: 10px; /* Increased gap */
+  gap: 10px;
   margin-bottom: 8px;
 }
 
@@ -849,7 +849,7 @@ main {
 
 @keyframes scaleUp {
   0% {
-    transform: scale(0.8); /* Start smaller */
+    transform: scale(0.8);
     opacity: 0;
   }
   100% {
@@ -870,7 +870,7 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
-  background-color: var(--onyx); /* Placeholder background */
+  background-color: var(--onyx);
 }
 
 .project-img::before {
@@ -940,7 +940,6 @@ main {
   color: var(--white-2);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
-  /* text-transform: capitalize; Removed */
   line-height: 1.3;
   margin-top: 10px;
 }
@@ -957,7 +956,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.5;
   margin-top: 8px;
-  margin-bottom: 15px; /* Add margin below description */
+  margin-bottom: 15px;
 }
 
 /* Project Buttons Styling */
@@ -965,7 +964,7 @@ main {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
-  margin-top: 15px; /* Adjusted margin */
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -985,10 +984,10 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.project-buttons .btn-link.disabled { /* Style for disabled buttons */
+.project-buttons .btn-link.disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    pointer-events: none; /* Prevent clicks */
+    pointer-events: none;
 }
 
 .project-buttons .btn-link svg {
@@ -997,14 +996,14 @@ main {
   stroke-width: 2;
 }
 
-.project-buttons .btn-link:hover:not(.disabled) { /* Exclude disabled from hover */
+.project-buttons .btn-link:hover:not(.disabled) {
   background: var(--jet);
   color: var(--white-1);
   box-shadow: var(--shadow-2);
   transform: translateY(-2px);
 }
 
-.project-buttons .btn-link:focus:not(.disabled) { /* Exclude disabled from focus */
+.project-buttons .btn-link:focus:not(.disabled) {
   outline: 2px solid var(--orange-yellow-crayola);
   outline-offset: 2px;
 }
@@ -1048,7 +1047,7 @@ main {
   height: 200px;
   object-fit: cover;
   display: block;
-  background-color: var(--onyx); /* Background for placeholder */
+  background-color: var(--onyx);
 }
 
 .gallery-item figcaption {
@@ -1243,7 +1242,7 @@ textarea.form-input::-webkit-resizer {
   .icon-box {
     width: 48px;
     height: 48px;
-    min-width: 48px; /* Ensure size */
+    min-width: 48px;
     border-radius: 12px;
   }
   .icon-box svg {
@@ -1441,8 +1440,12 @@ textarea.form-input::-webkit-resizer {
   }
 
   .project-list,
-  .gallery-grid { /* Apply 2-column grid */
+  .gallery-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .input-wrapper {
@@ -1550,7 +1553,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: auto; /* Allow auto width */
+    width: auto;
   }
 
   article {
@@ -1562,56 +1565,53 @@ textarea.form-input::-webkit-resizer {
     margin-inline: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     gap: 25px;
   }
 
   .main-content {
-    min-width: 0; /* Remove min-width constraint */
+    min-width: 0;
     width: 75%;
     margin: 0;
   }
 
   .sidebar {
-    position: sticky;
-    top: 60px;
-    max-height: calc(100vh - 120px); /* Limit height to viewport minus margins */
-    /* Removed fixed height */
-    /* height: calc(100vh - 120px); */
-    min-width: 250px; /* Minimum width */
-    width: 25%; /* Define width relative to main */
-    margin-bottom: 0;
-    padding-top: 60px;
+    position: sticky;      /* Make it sticky */
+    top: 60px;             /* Offset from the top */
+    height: auto;          /* Allow height to grow based on content */
+    max-height: none;      /* Remove max-height constraint */
+    min-width: 250px;      /* Ensure minimum width */
+    width: 25%;            /* Define width relative to main container */
+    align-self: flex-start;/* Align to the top of the flex container */
+    padding-top: 60px;     /* Keep padding */
     z-index: 1;
-    align-self: flex-start; /* Stick to the top */
-    overflow-y: auto; /* Add scroll if content overflows */
+    overflow: visible;     /* Ensure content isn't clipped */
+    margin-bottom: 60px;   /* Match main content bottom margin */
   }
 
-  /* Make sidebar scrollbar less obtrusive */
+  /* Hide scrollbar visually but keep functionality if needed */
   .sidebar::-webkit-scrollbar {
-    width: 3px;
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
   }
-  .sidebar::-webkit-scrollbar-track {
-    background: var(--eerie-black-2);
-  }
-  .sidebar::-webkit-scrollbar-thumb {
-    background: var(--jet);
-    border-radius: 3px;
+  .sidebar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
   .sidebar-info {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center items in column */
   }
 
-   .info-content { /* Allow content to wrap if needed */
-      width: 100%;
+   .info-content {
+      width: 100%; /* Allow full width */
       text-align: center;
+      overflow: visible; /* Ensure wrapped text is visible */
    }
 
    .info-content .name {
       white-space: normal; /* Allow name to wrap */
-      word-break: break-word; /* Break long words if necessary */
+      word-break: break-word; /* Break long words if needed */
       text-align: center;
    }
 
@@ -1620,22 +1620,22 @@ textarea.form-input::-webkit-resizer {
   }
 
   .info-content .title {
-    margin: auto;
+    margin: auto; /* Center title */
   }
 
   .info_more-btn {
-    display: none;
+    display: none; /* Hide mobile button */
   }
 
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
-    max-height: none;
-    overflow: visible;
+    max-height: none; /* Remove height constraint */
+    overflow: visible; /* Ensure content is visible */
   }
 
   .contacts-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack contacts */
   }
 
   .contact-info :is(.contact-link) {
@@ -1651,15 +1651,15 @@ textarea.form-input::-webkit-resizer {
 
   .separator:last-of-type {
     margin: 15px 0;
-    opacity: 0;
+    opacity: 0; /* Keep hidden */
   }
 
   .social-list {
-    justify-content: center;
+    justify-content: center; /* Center social icons */
   }
 
   .timeline-text {
-    max-width: 700px;
+    max-width: 700px; /* Limit text width for readability */
   }
 
    .gallery-grid {
