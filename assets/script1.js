@@ -4,7 +4,6 @@
   const $ = (id) => document.getElementById(id);
   const VERDICTS = ['suitable', 'conditional', 'unlikely', 'unsuitable'];
 
-  /* Keys rendered by dedicated sections; anything else on a listing is shown under "Additional information". */
   const KNOWN = new Set([
     'id', 'added_date', 'status', 'url', 'source_platform', 'listing_code', 'title', 'type',
     'location', 'price', 'details', 'landlord', 'requirements_stated', 'remote_signing_possible',
@@ -14,7 +13,6 @@
   let DATA = null;
   const state = { q: '', verdicts: new Set(), city: '', ltype: '', status: '', sort: 'score-desc' };
 
-  /* ---------- tiny DOM helper (uses textContent only: safe for any data) ---------- */
   function el(tag, props, ...kids) {
     const n = document.createElement(tag);
     if (props) {
@@ -33,12 +31,10 @@
     return n;
   }
 
-  /* ---------- formatting ---------- */
-  const eur = (n) => '€ ' + Number(n).toLocaleString('de-AT', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+  const eur = (n) => '€ ' + Number(n).toLocaleString('de-AT', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 
   function labelOf(key) {
     let s = String(key).replace(/_eur$/, '').replace(/_sqm$/, ' (m²)').replace(/_/g, ' ');
-    s = s.replace(/\bmeldezettel\b/i, 'Meldezettel').replace(/\bnag\b/i, 'NAG');
     return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
@@ -48,23 +44,31 @@
     return isNaN(d) ? s : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
   }
 
-  /* turn URLs and e-mail addresses inside text into links */
-  function linkify(text) {
+  function linkify(text, includePhones = false) {
     const out = [];
-    const re = /(https?:\/\/[^\s)]+|[\w.+-]+@[\w-]+\.[\w.-]+)/g;
+    const re = includePhones
+      ? /(https?:\/\/[^\s)]+|[\w.+-]+@[\w-]+(?:\.[\w-]+)+|\+?\d[\d ()/-]{5,}\d)/g
+      : /(https?:\/\/[^\s)]+|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g;
     let last = 0, m;
     while ((m = re.exec(text))) {
       if (m.index > last) out.push(text.slice(last, m.index));
       const t = m[0];
-      const href = t.includes('@') && !t.startsWith('http') ? 'mailto:' + t : t;
-      out.push(el('a', { href, target: href.startsWith('http') ? '_blank' : null, rel: 'noopener noreferrer', text: t }));
+      const isEmail = t.includes('@') && !t.startsWith('http');
+      const isPhone = includePhones && !isEmail && !t.startsWith('http');
+      const href = isEmail ? 'mailto:' + t : isPhone ? 'tel:' + t.replace(/[^\d+]/g, '') : t;
+      out.push(el('a', {
+        class: isPhone || isEmail ? 'contact-link' : null,
+        href,
+        target: href.startsWith('http') ? '_blank' : null,
+        rel: 'noopener noreferrer',
+        text: t
+      }));
       last = m.index + t.length;
     }
     if (last < text.length) out.push(text.slice(last));
     return out;
   }
 
-  /* Render ANY json value. key lets us format euro amounts. */
   function renderValue(v, key = '') {
     if (v === null || v === undefined || v === '') return el('span', { class: 'muted', text: '—' });
     if (typeof v === 'boolean') return el('span', { class: 'badge ' + (v ? 'b-info' : 'b-neutral'), text: v ? 'Yes' : 'No' });
@@ -91,7 +95,6 @@
   const sec = (title, body, wide) => el('div', { class: 'sec' + (wide ? ' wide' : '') }, el('h3', { text: title }), body);
   const list = (arr, cls) => el('ul', { class: 'plain ' + (cls || '') }, (arr || []).map((x) => el('li', null, renderValue(x))));
 
-  /* ---------- derived values ---------- */
   const verdictOf = (l) => (l.assessment && l.assessment.verdict) || 'unknown';
   const scoreOf = (l) => (l.assessment && typeof l.assessment.score === 'number') ? l.assessment.score : -1;
   const rentOf = (l) => (l.price && typeof l.price.rent_monthly_eur === 'number') ? l.price.rent_monthly_eur : Infinity;
@@ -99,7 +102,6 @@
   const cityOf = (l) => (l.location && l.location.city) || '';
   const ltypeOf = (l) => (l.landlord && l.landlord.type) || '';
 
-  /* ---------- meta / profile / assumptions ---------- */
   function renderMeta(meta) {
     const box = $('meta-section');
     box.replaceChildren();
@@ -108,63 +110,25 @@
     const d = el('details', { class: 'panel', style: 'margin:0;border:0;box-shadow:none;padding:0' });
     d.append(el('summary', { text: 'About this list: applicants & assumptions' }));
     const body = el('div', { class: 'panel-body' });
-
-    const top = {};
-    for (const k of ['schema_version', 'purpose', 'last_updated']) if (k in meta) top[k] = meta[k];
-    body.append(sec('Overview', kv(top)));
-
-    if (meta.applicant_profile) body.append(sec('Applicant profile', kv(meta.applicant_profile)));
-    if (meta.assumptions) body.append(sec('Assumptions', list(meta.assumptions)));
-
-    if (meta.verdict_values) {
-      body.append(sec('Verdict values', el('div', { class: 'pills' },
-        meta.verdict_values.map((v) => el('span', { class: 'badge b-' + v, text: v })))));
-    }
-    if (meta.status_values) {
-      body.append(sec('Status values', el('div', { class: 'pills' },
-        meta.status_values.map((v) => el('span', { class: 'badge b-neutral', text: labelOf(v) })))));
-    }
-    const rest = {};
-    for (const [k, v] of Object.entries(meta)) {
-      if (!['schema_version', 'purpose', 'last_updated', 'applicant_profile', 'assumptions', 'verdict_values', 'status_values'].includes(k)) rest[k] = v;
-    }
-    if (Object.keys(rest).length) body.append(sec('Other meta', kv(rest)));
-
+    body.append(sec('Overview', kv({ schema_version: meta.schema_version, purpose: meta.purpose, last_updated: meta.last_updated })));
     d.append(body);
     box.append(d);
   }
 
-  function renderTemplate(tpl) {
-    const box = $('template-section');
-    if (!tpl) return;
-    box.replaceChildren();
-    box.hidden = false;
-    const d = el('details', { class: 'panel', style: 'margin:0;border:0;box-shadow:none;padding:0' });
-    d.append(el('summary', { text: 'Schema template (blank listing structure)' }));
-    d.append(el('div', { class: 'panel-body' }, renderValue(tpl)));
-    box.append(d);
-  }
-
-  /* ---------- summary tiles ---------- */
   function renderSummary(listings) {
     const box = $('summary');
     box.replaceChildren();
     const counts = Object.fromEntries(VERDICTS.map((v) => [v, 0]));
-    let best = null;
     for (const l of listings) {
       const v = verdictOf(l);
       if (v in counts) counts[v]++;
-      if (!best || scoreOf(l) > scoreOf(best)) best = l;
     }
     const tile = (n, t) => el('div', { class: 'tile' }, el('b', { text: n }), el('span', { text: t }));
-    box.append(tile(listings.length, 'Listings'));
-    VERDICTS.forEach((v) => box.append(tile(counts[v], v)));
-    box.append(tile(best ? best.id : '—', 'Top pick'));
-    box.append(tile(best ? scoreOf(best) : '—', 'Top score'));
+    box.append(tile(listings.length, 'Total'));
+    VERDICTS.forEach((v) => box.append(tile(counts[v], v.charAt(0).toUpperCase() + v.slice(1))));
     box.hidden = false;
   }
 
-  /* ---------- a single listing card ---------- */
   function renderCard(l) {
     const a = l.assessment || {};
     const loc = l.location || {};
@@ -176,95 +140,118 @@
     const rentTxt = typeof price.rent_monthly_eur === 'number' ? eur(price.rent_monthly_eur) : '—';
     const pct = Math.max(0, Math.min(100, scoreOf(l)));
 
-    const summary = el('summary', null,
+    // Extract Contact Info vs Other Details
+    const landlordRaw = l.landlord || {};
+    const contactInfo = {};
+    const landlordDetails = {};
+    
+    // Search for keywords or values indicating an email or phone number
+    const contactKeys = ['phone', 'email', 'contact', 'whatsapp', 'tel'];
+    const hasContactDetails = (val) => {
+        if(typeof val !== 'string') return false;
+        return val.includes('@') || /\+?[0-9]{5,}/.test(val);
+    };
+    
+    let hasContact = false;
+
+    for (const [k, val] of Object.entries(landlordRaw)) {
+      if (contactKeys.some(ck => k.toLowerCase().includes(ck)) || hasContactDetails(val)) {
+        contactInfo[k] = val;
+        hasContact = true;
+      }
+      else landlordDetails[k] = val;
+    }
+
+    const extraRaw = Object.fromEntries(Object.entries(l).filter(([k]) => !KNOWN.has(k)));
+    const otherDetails = {};
+    for (const [k, val] of Object.entries(extraRaw)) {
+      if (contactKeys.some(ck => k.toLowerCase().includes(ck)) || hasContactDetails(val)) {
+        contactInfo[k] = val;
+        hasContact = true;
+      }
+      else otherDetails[k] = val;
+    }
+
+    const topSummary = el('div', { class: 'card-header' },
       el('div', { class: 'c-top' },
-        el('span', { class: 'c-id', text: l.id }),
-        el('span', null,
-          el('span', { class: 'badge b-' + v, text: v }), ' ',
-          el('span', { class: 'badge ' + (rejected ? 'b-unsuitable' : 'b-neutral'), text: labelOf(l.status || '') }))),
+        el('span', { class: 'badge b-' + v, text: v }),
+        el('span', { class: 'c-id', text: l.id })
+      ),
       el('div', { class: 'c-title', text: l.title || '(untitled)' }),
-      el('div', { class: 'c-loc', text: [place, l.type].filter(Boolean).join(' · ') }),
+      el('div', { class: 'c-loc', text: [place, l.type].filter(Boolean).join(' • ') }),
       el('div', { class: 'c-meta' },
-        el('span', { class: 'c-rent' }, rentTxt, el('small', null, ' / month')),
-        price.total_move_in_cost_eur != null ? el('span', { class: 'c-stat', text: 'Move-in ' + eur(price.total_move_in_cost_eur) }) : null,
-        l.details && l.details.size_sqm ? el('span', { class: 'c-stat', text: l.details.size_sqm + ' m²' }) : null),
-      el('div', { class: 'scorebar', 'aria-label': 'Score ' + scoreOf(l) + ' of 100' },
-        el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + pct + '%' })),
-        el('b', { text: scoreOf(l) + ' / 100' })),
-      el('span', { class: 'c-more', text: 'toggle' }));
+        el('div', null, 
+          el('span', { class: 'c-rent' }, rentTxt), 
+          el('small', null, '/mo')
+        ),
+        el('div', { class: 'scorebar', 'aria-label': 'Score ' + scoreOf(l) },
+          el('b', { text: scoreOf(l) }),
+          el('div', { class: 'track' }, el('div', { class: 'fill', style: 'width:' + pct + '%' }))
+        )
+      )
+    );
 
-    const body = el('div', { class: 'card-body' });
+    const card = el('div', { class: 'card v-' + v + (rejected ? ' is-rejected' : ''), id: l.id }, topSummary);
 
-    /* Identity */
-    body.append(sec('Listing', kv({
-      id: l.id, added_date: l.added_date, status: l.status, source_platform: l.source_platform,
-      listing_code: l.listing_code, type: l.type
-    })));
+    const actionRow = el('div', { class: 'dual-actions' });
+    
+    // MORE INFO DRAWER
+    const moreInfoBody = el('div', { class: 'card-body' });
+    moreInfoBody.append(sec('Location', kv(loc)));
+    moreInfoBody.append(sec('Price & Details', kv({...price, ...(l.details || {})})));
+    if (Object.keys(landlordDetails).length) moreInfoBody.append(sec('Landlord / Agent', kv(landlordDetails)));
+    moreInfoBody.append(sec('Requirements', (l.requirements_stated && l.requirements_stated.length)
+      ? list(l.requirements_stated) : el('span', { class: 'muted', text: 'None' }), true));
+    moreInfoBody.append(sec('Assessment', kv({ verdict: a.verdict, score: a.score, scam_risk: a.scam_risk }), true));
+    if (a.reasons_for && a.reasons_for.length) moreInfoBody.append(sec('Pros', list(a.reasons_for, 'ok')));
+    if (a.risks && a.risks.length) moreInfoBody.append(sec('Risks', list(a.risks, 'risk')));
+    if (Object.keys(otherDetails).length) moreInfoBody.append(sec('Other Details', kv(otherDetails), true));
+    if (l.notes) moreInfoBody.append(sec('Notes', el('div', { class: 'note-box' }, linkify(l.notes)), true));
+    
+    const moreActions = el('div', { class: 'card-actions sec wide' });
+    if (l.url) moreActions.append(el('a', { class: 'btn primary', href: l.url, target: '_blank', rel: 'noopener noreferrer', text: 'Open Original Listing' }));
+    moreInfoBody.append(moreActions);
 
-    /* Location */
-    body.append(sec('Location', kv(loc)));
+    const moreInfoDetails = el('details', {class: 'drawer details-drawer'}, 
+      el('summary', {class: 'btn ghost drawer-btn'}, 'More Info ↓'),
+      moreInfoBody
+    );
 
-    /* Price */
-    body.append(sec('Price', kv(price)));
-
-    /* Details */
-    body.append(sec('Details', kv(l.details || {})));
-
-    /* Landlord */
-    body.append(sec('Landlord / agent', kv(l.landlord || {})));
-
-    /* Process flags */
-    body.append(sec('Process', kv({
-      remote_signing_possible: l.remote_signing_possible,
-      viewing_required_in_person: l.viewing_required_in_person
-    })));
-
-    /* Requirements */
-    body.append(sec('Requirements stated', (l.requirements_stated && l.requirements_stated.length)
-      ? list(l.requirements_stated) : el('span', { class: 'muted', text: 'None stated' }), true));
-
-    /* Features */
-    if ('features' in l) {
-      body.append(sec('Features', (l.features && l.features.length)
-        ? el('div', { class: 'pills' }, l.features.map((f) => el('span', { class: 'badge b-neutral', text: f })))
-        : el('span', { class: 'muted', text: '—' }), true));
+    // CONTACT DRAWER (Only if contact info exists)
+    if(hasContact) {
+      const contactBody = el('div', { class: 'card-body contact-body' });
+      const contactRows = el('dl', { class: 'kv contact-kv' }, Object.entries(contactInfo).map(([key, value]) => {
+        const isContactText = typeof value === 'string' && /(?:phone|tel|whatsapp|mobile|call|email)/i.test(key + ' ' + value);
+        const renderedValue = typeof value === 'string'
+          ? el('span', { class: 'contact-value' }, linkify(value, isContactText))
+          : renderValue(value, key);
+        return el('div', { class: 'contact-entry' },
+          el('dt', { text: labelOf(key) }),
+          el('dd', null, renderedValue)
+        );
+      }));
+      contactBody.append(sec('Contact Details', contactRows, true));
+      
+      const contactDetails = el('details', {class: 'drawer contact-drawer'}, 
+        el('summary', {class: 'btn ghost drawer-btn'}, 'Contact Info ↓'),
+        contactBody
+      );
+      
+      // Auto-close one when the other opens
+      contactDetails.addEventListener('toggle', (e) => { if(e.target.open) moreInfoDetails.open = false; });
+      moreInfoDetails.addEventListener('toggle', (e) => { if(e.target.open) contactDetails.open = false; });
+      
+      actionRow.append(contactDetails);
+    } else {
+        moreInfoDetails.classList.add('full-width');
     }
 
-    /* Assessment */
-    body.append(sec('Assessment', kv({ verdict: a.verdict, score: a.score, scam_risk: a.scam_risk }), true));
-    body.append(sec('Reasons for', a.reasons_for && a.reasons_for.length ? list(a.reasons_for, 'ok') : el('span', { class: 'muted', text: '—' })));
-    body.append(sec('Risks', a.risks && a.risks.length ? list(a.risks, 'risk') : el('span', { class: 'muted', text: '—' })));
-    body.append(sec('Questions to ask', a.questions_to_ask && a.questions_to_ask.length ? list(a.questions_to_ask, 'q') : el('span', { class: 'muted', text: '—' })));
-    body.append(sec('Documents likely needed', a.documents_likely_needed && a.documents_likely_needed.length ? list(a.documents_likely_needed, 'doc') : el('span', { class: 'muted', text: '—' })));
+    actionRow.append(moreInfoDetails);
+    card.append(actionRow);
 
-    /* any extra assessment keys */
-    const extraAssess = Object.fromEntries(Object.entries(a).filter(([k]) =>
-      !['verdict', 'score', 'scam_risk', 'reasons_for', 'risks', 'questions_to_ask', 'documents_likely_needed'].includes(k)));
-    if (Object.keys(extraAssess).length) body.append(sec('More assessment', kv(extraAssess), true));
-
-    /* Irregular / additional keys (price_discrepancy, deposit_note, financing_contribution, options, ...) */
-    const extra = Object.fromEntries(Object.entries(l).filter(([k]) => !KNOWN.has(k)));
-    if (Object.keys(extra).length) body.append(sec('Additional information', kv(extra), true));
-
-    /* Notes */
-    if (l.notes) body.append(sec('Notes', el('div', { class: 'note-box' }, linkify(l.notes)), true));
-
-    /* Raw text */
-    if (l.raw_text_excerpt) {
-      body.append(sec('Original listing excerpt', el('div', { class: 'raw', text: l.raw_text_excerpt }), true));
-    }
-
-    /* Actions */
-    const actions = el('div', { class: 'card-actions sec wide' });
-    if (l.url) actions.append(el('a', { class: 'btn', href: l.url, target: '_blank', rel: 'noopener noreferrer', text: 'Open original listing ↗' }));
-    else actions.append(el('span', { class: 'badge b-neutral', text: 'No source URL saved' }));
-    body.append(actions);
-
-    const card = el('details', { class: 'card v-' + v + (rejected ? ' is-rejected' : ''), id: l.id }, summary, body);
     return card;
   }
 
-  /* ---------- filtering & sorting ---------- */
   function filtered() {
     const q = state.q.trim().toLowerCase();
     let out = DATA.listings.filter((l) => {
@@ -299,7 +286,6 @@
     $('result-count').textContent = `Showing ${items.length} of ${DATA.listings.length} listings`;
   }
 
-  /* ---------- controls ---------- */
   function fillSelect(sel, values, allLabel, fmt = (x) => x) {
     sel.replaceChildren(el('option', { value: '', text: allLabel }));
     values.forEach((v) => sel.append(el('option', { value: v, text: fmt(v) })));
@@ -319,15 +305,13 @@
       chips.append(el('button', {
         class: 'chip', type: 'button', 'aria-pressed': 'false', 'data-v': v,
         text: `${labelOf(v)} (${n})`,
-        on: {
-          click: (e) => {
+        on: { click: (e) => {
             const b = e.currentTarget;
             const on = b.getAttribute('aria-pressed') !== 'true';
             b.setAttribute('aria-pressed', String(on));
             on ? state.verdicts.add(v) : state.verdicts.delete(v);
             renderList();
-          }
-        }
+          }}
       }));
     });
 
@@ -345,7 +329,9 @@
       chips.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', 'false'));
       renderList();
     });
-    const setAll = (open) => $('list').querySelectorAll('details.card').forEach((d) => { d.open = open; });
+    
+    // Handle global expand/collapse safely for the new drawer structure
+    const setAll = (open) => $('list').querySelectorAll('.details-drawer').forEach((d) => { d.open = open; });
     $('expand-all').addEventListener('click', () => setAll(true));
     $('collapse-all').addEventListener('click', () => setAll(false));
 
@@ -357,33 +343,33 @@
     });
   }
 
-  /* ---------- boot ---------- */
   function init(data) {
     DATA = data;
     cardCache.clear();
     $('load-error').hidden = true;
     const m = data.meta || {};
-    $('subtitle').textContent = `${data.listings.length} listings · updated ${fmtDate(m.last_updated) || '—'}`;
+    $('subtitle').textContent = `${data.listings.length} properties found`;
     renderMeta(m);
     renderSummary(data.listings);
     setupControls();
     renderList();
-    renderTemplate(data.schema_template);
 
-    /* open a card directly via #L016 */
     if (location.hash) {
       const t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-      if (t && t.tagName === 'DETAILS') { t.open = true; t.scrollIntoView(); }
+      if (t && t.querySelector('.details-drawer')) { 
+          t.querySelector('.details-drawer').open = true; 
+          t.scrollIntoView(); 
+      }
     }
   }
 
   function showLoadError() {
-    $('subtitle').textContent = 'Data file not loaded';
+    $('subtitle').textContent = 'Awaiting JSON File';
     $('load-error').hidden = false;
     $('file-input').addEventListener('change', (e) => {
       const f = e.target.files && e.target.files[0];
       if (!f) return;
-      f.text().then((txt) => init(JSON.parse(txt))).catch((err) => alert('Invalid JSON file: ' + err.message));
+      f.text().then((txt) => init(JSON.parse(txt))).catch((err) => alert('Invalid JSON: ' + err.message));
     });
   }
 

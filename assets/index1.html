@@ -3,9 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#14532d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
 <title>Austria Housing Shortlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -13,19 +18,19 @@
 <header class="topbar" id="top">
   <div class="topbar-inner">
     <div class="brand">
-      <h1>Austria Housing Shortlist</h1>
+      <h1>Housing Shortlist</h1>
       <p class="sub" id="subtitle">Loading…</p>
     </div>
     <button class="icon-btn" id="toggle-filters" aria-expanded="false" aria-controls="filters">
       <span class="sr">Filters</span>
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 5h18M6 12h12M10 19h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 6h18M6 12h12M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
     </button>
   </div>
 
   <section class="filters" id="filters" hidden>
     <label class="field search">
       <span class="sr">Search</span>
-      <input type="search" id="q" placeholder="Search any text (town, landlord, risk…)" autocomplete="off">
+      <input type="search" id="q" placeholder="Search town, landlord, risk…" autocomplete="off">
     </label>
 
     <div class="chips" id="verdict-chips" role="group" aria-label="Filter by verdict"></div>
@@ -59,36 +64,33 @@
     </div>
     <div class="row actions">
       <button class="btn ghost" id="reset" type="button">Reset</button>
-      <button class="btn ghost" id="expand-all" type="button">Expand all</button>
-      <button class="btn ghost" id="collapse-all" type="button">Collapse all</button>
+      <button class="btn ghost" id="expand-all" type="button">Expand</button>
+      <button class="btn ghost" id="collapse-all" type="button">Collapse</button>
     </div>
   </section>
 </header>
 
 <main id="main">
   <div id="load-error" class="notice" hidden>
-    <h2>Could not load listings.json</h2>
-    <p>Browsers block reading local files directly. Either serve this folder (for example <code>python3 -m http.server</code>) or choose the file manually:</p>
+    <h2>Data Unavailable</h2>
+    <p>Please select your local listings.json file to continue.</p>
     <label class="btn">
-      Choose listings.json
+      Choose File
       <input type="file" id="file-input" accept="application/json,.json" hidden>
     </label>
   </div>
 
   <section id="meta-section" class="panel" hidden></section>
-
   <section id="summary" class="summary" hidden></section>
-
   <p class="result-count" id="result-count" aria-live="polite"></p>
   <section id="list" class="list" aria-label="Listings"></section>
-  <p id="empty" class="empty" hidden>No listings match these filters.</p>
-
+  <p id="empty" class="empty" hidden>No listings match your criteria.</p>
   <section id="template-section" class="panel" hidden></section>
 </main>
 
 <footer class="foot">
-  <p>Indicative assessments only. Always verify details, eligibility and contact numbers with the landlord directly.</p>
-  <a href="#top" class="btn ghost">Back to top ↑</a>
+  <p>Indicative assessments only. Always verify details with the landlord.</p>
+  <a href="#top" class="btn ghost">Back to top</a>
 </footer>
 
 <script src="script1.js"></script>
