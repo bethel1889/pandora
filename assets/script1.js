@@ -208,10 +208,6 @@
     if (Object.keys(otherDetails).length) moreInfoBody.append(sec('Other Details', kv(otherDetails), true));
     if (l.notes) moreInfoBody.append(sec('Notes', el('div', { class: 'note-box' }, linkify(l.notes)), true));
     
-    const moreActions = el('div', { class: 'card-actions sec wide' });
-    if (l.url) moreActions.append(el('a', { class: 'btn primary', href: l.url, target: '_blank', rel: 'noopener noreferrer', text: 'Open Original Listing' }));
-    moreInfoBody.append(moreActions);
-
     const moreInfoDetails = el('details', {class: 'drawer details-drawer'}, 
       el('summary', {class: 'btn ghost drawer-btn'}, 'More Info ↓'),
       moreInfoBody
@@ -241,12 +237,20 @@
       contactDetails.addEventListener('toggle', (e) => { if(e.target.open) moreInfoDetails.open = false; });
       moreInfoDetails.addEventListener('toggle', (e) => { if(e.target.open) contactDetails.open = false; });
       
+      actionRow.classList.add('has-contact');
       actionRow.append(contactDetails);
-    } else {
+    } else if (!l.url) {
         moreInfoDetails.classList.add('full-width');
     }
 
     actionRow.append(moreInfoDetails);
+    if (l.url) actionRow.append(el('a', {
+      class: 'btn primary listing-link',
+      href: l.url,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      text: 'Open Original Listing'
+    }));
     card.append(actionRow);
 
     return card;
