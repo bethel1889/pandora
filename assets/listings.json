@@ -1,0 +1,2507 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "purpose": "Accommodation listings in Austria for Nigeria-based applicants of an Austrian student residence permit; used as potential proof of accommodation.",
+    "last_updated": "2026-10-18",
+    "applicant_profile": {
+      "current_country": "Nigeria",
+      "nationality": "Nigerian (non-EU)",
+      "permit_type": "Aufenthaltstitel Student (NAG §64)",
+      "can_view_in_person": false,
+      "has_austrian_bank_account": false,
+      "has_austrian_income_or_guarantor": false,
+      "notes": "Edit this block if the applicants differ (e.g. have a guarantor or are arriving earlier)."
+    },
+    "assumptions": [
+      "Applicants must secure housing remotely and need a contract/confirmation usable for the permit application.",
+      "Short-term/tourist lets are assumed NOT acceptable as permit proof.",
+      "Rules must be verified with the Austrian embassy/authorities.",
+      "Non-profit landlords (e.g. WAG, Wohnbaugruppe Ennstal, GEMYSAG) may restrict flats to registered, subsidy-eligible applicants, which applicants abroad may not meet; ask each one directly."
+    ],
+    "verdict_values": ["suitable", "conditional", "unlikely", "unsuitable"],
+    "status_values": ["new", "shortlisted", "contacted", "awaiting_reply", "viewing_arranged", "rejected", "contract_offered", "secured"]
+  },
+  "listings": [
+    {
+      "id": "L001",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/gemuetliche-kleinwohnung-in-ruhiger-siedlung-unweit-vom-zentrum-1464759733/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1464759733 (landlord ref ID 6650/29148)",
+      "title": "Cozy small apartment in a quiet settlement not far from the center!",
+      "type": "apartment",
+      "location": {
+        "city": "Trofaiach",
+        "district": "Leoben, Styria",
+        "address": "Lewaldstraße 12, 8793 Trofaiach (Stiege 1, 1st floor, Top 5)",
+        "nearest_university_or_distance": "Listing states 'University <8325m' (about 8.3 km), likely Leoben; 'Train station <6150m', 'Higher school <8450m', supermarket <500m, doctor <325m. Distances as listed; verify on a map."
+      },
+      "price": {
+        "rent_monthly_eur": 304.12,
+        "utilities_included": "Rent of 304.12 is gross: net rent 276.47 + VAT 27.65; includes operating costs (122.59 excl. VAT), administration costs and cable TV. NOT included: district heating and electricity (by consumption).",
+        "deposit_eur": 912.36,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1216.48
+      },
+      "details": {
+        "size_sqm": 33.5,
+        "rooms": 1,
+        "furnished": false,
+        "available_from": null,
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "WAG Wohnungsanlagen Gesellschaft m.b.H. (Linz), Team WAG Hochsteiermark",
+        "contact": "Tel/fax numbers garbled in the paste (as pasted: tel 10043503387688, phone 200436649672157, fax 004350338333). Re-copy the numbers from the original listing; contact via the willhaben form or WAG website.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing beyond deposit.",
+        "WAG has a separate 'Wohnungsansuchen' (apartment registration) on its website, so a formal application may be required."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "1st floor, bright, kitchen-living room, bedroom, anteroom, bathroom with shower/toilet",
+        "Cellar compartment included",
+        "District heating, cable TV",
+        "Optional parking space for extra rent",
+        "Built 1940, energy class C (HWB 94.1)",
+        "Condition: very good/good"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 55,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established company landlord (WAG), no broker commission stated, listing says commission-free.",
+          "Unlimited lease with a long-term, genuine residential contract, which is the kind of document a permit file needs.",
+          "Very low rent (about 304 EUR) and a deposit of 3 months' rent (912.36).",
+          "Self-contained flat with bathroom, so likely meets 'adequate accommodation' expectations."
+        ],
+        "risks": [
+          "Institutional landlord may require a formal application, income proof, Austrian bank account/direct debit, or in-person viewing/signing, which is hard from Nigeria.",
+          "Housing associations can have eligibility rules (e.g. income limits, residence status); unknown for this unit.",
+          "Heating and electricity are extra (budget a few tens of EUR per month more).",
+          "Smaller town: check commute to the applicants' university and the study location.",
+          "Availability date, the earliest start date and the exact tenant requirements are not stated."
+        ],
+        "questions_to_ask": [
+          "Is the flat still available, and from what date? Can the contract start before arrival?",
+          "Do you rent to applicants who are abroad and non-EU students, and can the contract be signed remotely or digitally?",
+          "What documents, income proof or guarantor do you require? Any income limits or residence-status requirements for this flat?",
+          "Is an Austrian bank account required, or can the deposit and rent be paid from abroad?",
+          "Will you provide a signed rental contract/confirmation usable for a student residence permit application, and can the tenant register the address (Meldezettel)?",
+          "Is subletting or a second occupant allowed? What is the notice period?"
+        ],
+        "documents_likely_needed": [
+          "Completed WAG Wohnungsansuchen / application form",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Proof of Austrian account (if required for direct debit)"
+        ]
+      },
+      "raw_text_excerpt": "Total load 304.12 incl. operating costs, admin costs, cable TV and VAT; plus heating and electricity by consumption. Deposit 912.36. Rental period: indefinite. Landlord acts only for itself, commission-free. Last modified 2026-10-17 04:48.",
+      "notes": "URL recovered from the 'previous' link in the L002 paste. Estimated monthly cost including heating/electricity is likely roughly 350-420 EUR, which is an assumption to be verified. Re-pasted on 2026-10-18: nothing else changed (same price, deposit and lease). One clarification: the commission note means the landlord (not the tenant) pays any broker commission, and WAG advertises the flat as commission-free; the 304.12 EUR includes operating and administration costs and cable TV, while heating and electricity are billed by consumption."
+    },
+    {
+      "id": "L002",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": null,
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1868958579 (landlord ref ID 35207)",
+      "title": "Apartment for rent in Eisenerz (friendly Garconniere, housing support available)",
+      "type": "studio",
+      "location": {
+        "city": "Eisenerz",
+        "district": "Leoben, Styria",
+        "address": "Vordernberger Straße 93, 8790 Eisenerz",
+        "nearest_university_or_distance": "Not stated. Eisenerz is a small, remote mountain town; the nearest university town (Leoben) is roughly 35-40 km away (my own estimate, verify). Daily commuting would be long."
+      },
+      "price": {
+        "rent_monthly_eur": 262.7,
+        "utilities_included": "Unclear. Listed 'additional costs' 81.06 and 'heating costs' 68.70 per month are shown separately; it is not stated whether the 262.70 already includes the 81.06. The 262.70 is AFTER a 100 EUR monthly subsidy is deducted (see notes).",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 36.31,
+        "rooms": 1,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Liezen",
+        "contact": "Lisa Kalsberger, tel 03612 273269; address Siedlungsstraße 2, 8940 Liezen; website wohnbaugruppe.at",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing.",
+        "Subsidy conditions are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Bathroom/toilet, kitchenette, anteroom, living/sleeping area",
+        "Built 1990, energy HWB 158.24 kWh/m²/year (poor efficiency, expect higher heating cost)",
+        "Housing cooperative start-up subsidy: 100 EUR/month deducted from the stated rent"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 45,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord; contact person and phone given.",
+          "Very low rent (262.70 EUR) and available immediately.",
+          "Self-contained flat with own bathroom and kitchenette."
+        ],
+        "risks": [
+          "Remote location: far from universities, limited job and transport options; studying in Leoben/Graz would mean a long commute or a move.",
+          "The 100 EUR subsidy falls by 20 EUR each year, so the rent rises by 20 EUR a year until the 100 EUR is gone (about 362.70 EUR in the fifth year). Check how long the subsidy lasts.",
+          "Deposit, fees, lease type and any cooperative share/financing contribution are not stated.",
+          "Subsidy and allocation conditions (income limits, main residence, residence status) are unknown.",
+          "Poor energy efficiency means heating could cost more than the listed 68.70 EUR.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "What is the deposit, and is there any cooperative share (Genossenschaftsanteil) or financing contribution due at move-in?",
+          "Is the 262.70 EUR rent inclusive of the 81.06 EUR operating costs? What is the full monthly cost including heating and electricity?",
+          "Is the lease unlimited or fixed-term, and what are the conditions and duration of the 100 EUR subsidy?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely or digitally? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 262.70 (7.23/m²); additional costs 81.06; heating costs 68.70; subsidy 100.00 deducted, reduced by 20.00 annually; available immediately; year built 1990; last modified 2026-10-17 02:20.",
+      "notes": "No direct URL supplied (only the search results link); re-find via willhaben code 1868958579. Total monthly estimate is uncertain: about 331 EUR if 262.70 already includes the 81.06 operating costs, about 412 EUR if not (plus electricity)."
+    },
+    {
+      "id": "L003",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/moeblierte-wohnung-in-mariazell-mit-parkplatz-und-garten-1901596246/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1901596246",
+      "title": "Furnished flat in Mariazell with parking space and garden",
+      "type": "apartment",
+      "location": {
+        "city": "Mariazell",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Morzingasse 12, 8630 Mariazell (ground floor)",
+        "nearest_university_or_distance": "Not stated. Mariazell is a small, remote town with no university; Bruck an der Mur/Kapfenberg are about 50-60 km away and Graz roughly 120 km (my own estimates, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": null,
+        "utilities_included": "NOT included: operating costs and heating are billed by consumption directly with the suppliers.",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 51,
+        "rooms": 3,
+        "furnished": "partly/fully furnished (listing says both 'Teilmöbliert / Möbliert' and 'möbliert' in the title)",
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "price_discrepancy": {
+        "headline_price_eur": 400,
+        "description_price_eur": 320,
+        "note": "Headline shows 400 EUR (7.84/m²) but the description says 320 EUR/month for about 51 m² including garden, excluding operating costs. Clarify which is correct. Deposit is 'by arrangement'."
+      },
+      "landlord": {
+        "type": "private",
+        "name": "Private person (willhaben user since 10/2019)",
+        "contact": "Tel 06644213176 (via willhaben contact form)",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Ground-floor flat of about 40 m² (hall, boiler/storage room, living/bedroom, kitchen, bath, toilet) plus an upstairs veranda of about 11 m² for sole use; effectively one main room despite '3 rooms' in the headline",
+        "Own garden about 31 m² and carport for one car",
+        "Wheelchair accessible",
+        "Heating currently oil and wood, being switched to district heating"
+      ],
+      "assessment": {
+        "verdict": "unlikely",
+        "score": 35,
+        "scam_risk": "medium",
+        "reasons_for": [
+          "Furnished and available immediately, which helps someone arriving from abroad.",
+          "Unlimited lease; low rent either way; garden and carport.",
+          "Private landlords can sometimes be more flexible about remote contracts and non-standard applicants."
+        ],
+        "risks": [
+          "Location is very remote for a student: no university in Mariazell and long, limited public transport to Bruck, Kapfenberg or Graz.",
+          "Rent is inconsistent (400 vs 320 EUR) and the deposit is undefined, which makes the cost and the listing quality uncertain.",
+          "Private landlord that cannot be verified from abroad; make sure no money is sent before a contract and a viewing/video call.",
+          "Heating is changing (oil/wood to district heating); utilities are billed separately, so monthly cost is uncertain.",
+          "Listing does not say whether the tenant can register the address (Meldezettel) or whether remote signing is possible."
+        ],
+        "questions_to_ask": [
+          "Which rent is correct, 320 or 400 EUR, and what are the operating and heating costs per month?",
+          "How high is the deposit, and when and how is it paid? Do you accept payment from abroad?",
+          "Is the lease unlimited, and can you sign a written rental contract remotely before arrival?",
+          "Can the tenant register the address (Meldezettel), and will you provide a contract/confirmation usable for a student residence permit?",
+          "Is the flat fully furnished (what is included)? Can you offer a video viewing?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Signed rental contract (to be provided by the landlord)"
+        ]
+      },
+      "raw_text_excerpt": "Headline price EUR 400 (7.84/m²), description: 'Mietpreis fuer ca. 51 m2 inklusive eigenem Garten: 320 Euro/Monat, ohne Betriebskosten'. Kaution je nach Vereinbarung. Verfuegbar ab sofort, unbefristet. Last modified 2026-10-15 15:58.",
+      "notes": "Willhaben's own safety tips apply: pay a deposit only after a viewing, avoid transfers abroad, and avoid escrow services. The location is the main obstacle, so confirm where the applicant will study before pursuing."
+    },
+    {
+      "id": "L004",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/helle-dachgeschoss-wohnung-in-muerzzuschlag-1120407580/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1120407580",
+      "title": "Bright attic flat in Mürzzuschlag",
+      "type": "apartment",
+      "location": {
+        "city": "Mürzzuschlag",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Grazer Straße 53c (Top 10), 8680 Mürzzuschlag",
+        "nearest_university_or_distance": "Not stated. Shops and public transport are close by. Nearest university towns are far (Leoben roughly 50 km, Graz roughly 90 km; my own estimates, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 438.65,
+        "utilities_included": "Total rent is stated 'without heating costs and electricity', so operating costs appear to be included; heating and electricity are extra.",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 48.83,
+        "rooms": 3,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GEMYSAG Gemeinnützige Mürz-Ybbs Siedlungsanlagen GmbH (non-profit developer), Am Sagacker 2a, 8605 Kapfenberg",
+        "contact": "Ms Corina Holzer, tel 050 8882 601 (mornings only), email c.holzer@gemysag.at. Enquiries only by phone or email.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "As a non-profit developer, flats are only allocated to applicants who are registered with them and eligible for subsidised housing (förderbar). Applicants must first register as 'wohnungssuchend' with GEMYSAG."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Attic flat: hall, kitchen-living room, 2 rooms, bathroom with toilet",
+        "Energy efficient: HWB 46.3 kWh/m²/year, fGEE 0.88",
+        "Shopping and public transport nearby"
+      ],
+      "assessment": {
+        "verdict": "unlikely",
+        "score": 25,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit landlord, genuine company contact details, available immediately.",
+          "Good energy efficiency and a self-contained flat with 2 rooms, so it could host two people.",
+          "Reasonable rent for the size."
+        ],
+        "risks": [
+          "Allocation is restricted to registered, subsidy-eligible applicants. Eligibility criteria typically include income limits and residence status/main residence in Austria, which applicants still in Nigeria are unlikely to meet. This is the key blocker, to be confirmed with GEMYSAG.",
+          "Enquiries accepted only by phone (mornings) or email, which makes contact from abroad harder (time zone differences are small but a German speaker may be needed).",
+          "Deposit, lease type and signing process are not stated.",
+          "Remote location for a student; long distance to any university.",
+          "Rent of 438.65 EUR plus heating/electricity is higher than L001 to L003."
+        ],
+        "questions_to_ask": [
+          "Can a non-EU student who is still abroad register as an applicant (wohnungssuchend), and what are the eligibility criteria (income limits, residence status, minimum residence period)?",
+          "How high is the deposit, is there a cooperative share or financing contribution, and is the lease unlimited?",
+          "Can the contract be signed remotely, with a Meldezettel registration afterwards, and will the contract be usable for a student residence permit?",
+          "What are the monthly heating and electricity costs?"
+        ],
+        "documents_likely_needed": [
+          "GEMYSAG registration as an applicant (Wohnungsansuchen)",
+          "Proof of income and of residence/main residence in Austria",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete ohne Heizkosten und Strom: 438,65 EUR (8,98/m²). Als gemeinnuetziger Bautraeger koennen wir unsere Wohnungen nur an bei uns registrierte und foerderbare Wohnungswerber vergeben. Last modified 2026-10-15 15:53.",
+      "notes": "Likely not obtainable from abroad because of the eligibility rule. The same non-profit eligibility issue may also apply to L001 (WAG) and L002 (Wohnbaugruppe Ennstal): ask each whether they allocate to non-EU students abroad."
+    },
+    {
+      "id": "L005",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8700-leoben-charmanter-studentenhit-mit-balkon-1752478360/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1752478360 (agency ref ID 26-00379)",
+      "title": "8700 Leoben: Charming student hit with balcony (Wohnhof LKH Leoben, Top 6)",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Fischerauergasse 6, 8700 Leoben (2nd floor, Top 6)",
+        "nearest_university_or_distance": "Montanuniversität Leoben about 2.3 km (bikeable per listing). Train station 1.07 km, bus stop 0.24 km (lines 820, 822, 832, 6810), city centre close, next to LKH Hochsteiermark hospital."
+      },
+      "price": {
+        "rent_monthly_eur": 492.85,
+        "utilities_included": "Total of 492.85 EUR/month = net rent 281.00 + operating costs 102.90 + heating 58.80 + VAT 50.15 (headline 422.29 = rent + operating costs with VAT, excluding heating). Electricity/energy NOT included.",
+        "deposit_eur": 1480,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1972.85
+      },
+      "details": {
+        "size_sqm": 42,
+        "rooms": 1,
+        "furnished": "Fitted kitchen included, otherwise unfurnished",
+        "available_from": "immediately",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Stefanie Körbisser Immobilien GmbH, Waagner-Biro-Straße 102, 8020 Graz (contact: MSc. Stefanie Körbisser)",
+        "contact": "Phones as pasted were garbled; they most likely correspond to +43 316 282165 and +43 664 374 44 44 (the second is the number given in the text for viewing appointments). Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit; the listing invites a non-binding viewing appointment."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Renovated flat: hall, kitchen with fitted kitchenette and balcony access, living room, bathroom with shower, separate toilet",
+        "Parquet and tile floors, satellite TV connection, district heating",
+        "Cellar compartment depending on availability; optional car space at 30.59 EUR/month gross",
+        "Built 1920, energy class D (HWB 127)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 65,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Close to the Montanuniversität Leoben (about 2.3 km) and advertised as a student flat.",
+          "Registered estate agency in Graz with reference ID and a named contact, available immediately.",
+          "Private-market rental, so the non-profit eligibility rules that may affect L001, L002 and L004 appear not to apply.",
+          "Fixed 5-year lease gives a long contract period that can support a residence permit file.",
+          "Renovated, self-contained flat with fitted kitchen and balcony."
+        ],
+        "risks": [
+          "Highest cost of the listings so far: about 493 EUR/month plus electricity, and 1,480 EUR deposit (about 1,973 EUR to move in, before any broker fee).",
+          "Broker commission is not mentioned; clarify who pays.",
+          "Fixed 5-year term: check early termination terms before the applicant commits.",
+          "Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account for applicants abroad.",
+          "Heating costs and electricity make monthly cost higher than the headline price."
+        ],
+        "questions_to_ask": [
+          "Is there any broker commission (Provision), and who pays it?",
+          "Can a non-EU student who is still abroad sign remotely or by power of attorney, and is a video viewing possible?",
+          "Is an Austrian bank account or guarantor required? Can the deposit be paid by international transfer?",
+          "Will the lease be fixed for 5 years, and what are the early termination terms (for example if the permit is refused or the study ends)?",
+          "Will you provide a signed rental contract usable for a student residence permit, with Meldezettel registration possible?",
+          "What is the estimated monthly electricity cost?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 492,85 EUR (Hauptmietzins 281 + BK 102,90 + Heizkosten 58,80 + USt 50,15). Kaution 1.480. Mietdauer: auf 5 Jahre befristet. Verfuegbar ab sofort. Montanuniversitaet Leoben 2,3 km. Last modified 2026-10-15 15:57.",
+      "notes": "Strongest candidate so far for a Leoben student. Be careful with the early termination terms: a fixed term plus a permit that is not granted can leave the tenant with obligations, so ask about this in writing."
+    },
+    {
+      "id": "L006",
+      "added_date": "2026-10-18",
+      "status": "rejected",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/guenstige-singlewohnung-in-bruck-zu-vermieten-gefoerderte-miete-1-zimmer-1805077392/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1805077392 (landlord ref ID 333601_0008)",
+      "title": "Affordable single flat in Bruck, subsidised rent, 1 room",
+      "type": "apartment",
+      "location": {
+        "city": "Bruck an der Mur",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Grabenfeldstraße 45/8, 8600 Bruck an der Mur",
+        "nearest_university_or_distance": "Not stated. Bruck an der Mur is a mid-sized town; universities are in Leoben (roughly 20 km) and Graz (roughly 50 km), my own estimates, verify."
+      },
+      "price": {
+        "rent_monthly_eur": 400,
+        "utilities_included": "Rent includes operating costs and heating, excludes electricity. Depends on the interest rate and on the Land Steiermark subsidy, so the amount can change.",
+        "deposit_eur": 2000,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 2400
+      },
+      "details": {
+        "size_sqm": 37.7,
+        "rooms": 1,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "ÖWG Wohnbau, Moserhofgasse 14, 8010 Graz (contact: Mateo Kasalo)",
+        "contact": "Tel (as pasted 004331680551548, likely +43 316 80551548); viewing by appointment with the sales team",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "Subsidised flat: tenant must be an Austrian citizen, an EU citizen or equivalent, or have lived more than 5 years in Austria with a valid work permit.",
+        "Net annual household income limit: 49,600 EUR for 1 person, 74,400 EUR for 2 people, plus 6,570 EUR per additional person.",
+        "The flat must be the tenant's main residence."
+      ],
+      "features": [
+        "Attic flat without lift: kitchen, separate room, bathroom with shower and WC, hall, cellar compartment",
+        "District heating; built 1956; energy class D (HWB 122.9)",
+        "Commission-free; one dog allowed (no listed breeds)"
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": "Viewing possible by appointment; not stated whether required",
+      "assessment": {
+        "verdict": "unsuitable",
+        "score": 5,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine housing company with a clear contact and reference ID.",
+          "Commission-free, rent includes heating and operating costs."
+        ],
+        "risks": [
+          "Eligibility rules explicitly exclude the likely applicants: non-EU nationals need more than 5 years of residence in Austria with a work permit.",
+          "Subsidised flats must be the main residence and have income limits.",
+          "Highest deposit so far (2,000 EUR) and rent depends on interest rate and subsidy changes.",
+          "Top-floor flat without lift."
+        ],
+        "questions_to_ask": [],
+        "documents_likely_needed": []
+      },
+      "raw_text_excerpt": "Es handelt sich um eine gefoerderte Wohnung ... 1) Oesterreichische Staatsbuergerschaft, EU-Buerger oder gleichgestellte Personen bzw. Aufenthalt laenger als 5 Jahre in Oesterreich mit aufrechter Arbeitsbewilligung. 2) Einkommensgrenzen ... 3) Hauptwohnsitz. Kaution: 2000 Eur. Provisionsfrei. Last modified 2026-10-15 13:35.",
+      "notes": "Marked 'rejected' because of the explicit eligibility rule. Other ÖWG 'geförderte Miete' listings will have the same restriction; this also supports the concern that other subsidised/non-profit landlords (L001, L002, L004) may exclude non-EU students abroad."
+    },
+    {
+      "id": "L007",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8700-leoben-charmante-altbau-wohnung-mit-balkon-wohnhof-lkh-1254773533/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1254773533 (agency ref ID 26-00394)",
+      "title": "8700 Leoben | Charming period flat with balcony | Wohnhof LKH (Top 6)",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Vordernbergerstraße 77, 8700 Leoben (2nd floor)",
+        "nearest_university_or_distance": "Montanuniversität Leoben about 2.3 km per the listing text. The listed distances for this address are longer than for L005: train station 2.00 km, bus 1.45 km, shops 1.32 km. The same description text appears in both listings, so verify distances on a map."
+      },
+      "price": {
+        "rent_monthly_eur": 507.15,
+        "utilities_included": "Total of 507.15 EUR/month = net rent 294.00 + operating costs 102.90 + heating 58.80 + VAT 51.45 (headline 436.59 = rent + operating costs with VAT, excluding heating). Electricity/energy NOT included.",
+        "deposit_eur": 1520,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 2027.15
+      },
+      "details": {
+        "size_sqm": 42,
+        "rooms": 1,
+        "furnished": "New fitted kitchen being installed, otherwise unfurnished",
+        "available_from": "2026-12 (partly renovated; completion expected mid-November 2026, move-in early December)",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Stefanie Körbisser Immobilien GmbH, Waagner-Biro-Straße 102, 8020 Graz (contact: MSc. Stefanie Körbisser)",
+        "contact": "Same agency as L005. Phones as pasted were garbled; most likely +43 316 282165 and +43 664 374 44 44 (the number given for viewing appointments). Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit; the listing invites a non-binding viewing appointment."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Currently being partly renovated; photos to follow",
+        "Hall, separate kitchen with balcony access, living/bedroom, bathroom, separate toilet",
+        "Parquet and tile floors, high period-building ceilings, satellite TV connection, green courtyard",
+        "Optional car space at 30.59 EUR/month gross; cellar compartment depending on availability",
+        "District heating; energy class D (HWB 122)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 62,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Close to the Montanuniversität Leoben (about 2.3 km per the listing) and aimed at singles and couples.",
+          "Registered estate agency in Graz with reference ID and named contact (same as L005).",
+          "Private-market rental, so the non-profit eligibility rules that may affect L001, L002 and L004 appear not to apply.",
+          "Fixed 5-year lease supports a permit file.",
+          "December start fits applicants who are still abroad and cannot arrive immediately."
+        ],
+        "risks": [
+          "Flat is still under renovation and no photos exist yet, so the final condition cannot be checked from abroad.",
+          "Slightly more expensive than L005 (507.15 vs 492.85 EUR/month; deposit 1,520 vs 1,480 EUR); about 2,027 EUR to move in before any broker fee.",
+          "Broker commission is not mentioned; clarify who pays.",
+          "Rent would start in December, which may be before the applicant can actually arrive (permit processing time): ask about a later start date.",
+          "Fixed 5-year term: check early termination terms. Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account."
+        ],
+        "questions_to_ask": [
+          "Is there any broker commission, and who pays it?",
+          "Can the start date be delayed until the applicant arrives or the permit is granted, and what happens if the permit is refused (termination)?",
+          "Can a non-EU student abroad sign remotely, and is a video viewing or photos after the renovation possible?",
+          "Is an Austrian bank account or guarantor required? Can the deposit be paid from abroad?",
+          "Will the contract be usable for a student residence permit, with Meldezettel registration possible?",
+          "Are the listed distances correct (listing shows train station 2.0 km and bus 1.45 km)?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 507,15 EUR (Hauptmietzins 294 + BK 102,90 + Heizkosten 58,80 + USt 51,45). Kaution 1.520. Mietdauer befristet auf 5 Jahre. Mietbeginn ab Dezember 2026, Fertigstellung Mitte November, Fotos folgen. Last modified 2026-10-15 12:05.",
+      "notes": "Very similar to L005 (same agency, same complex type, same terms). L005 is available immediately and already renovated; L007 is newly renovated with a later start. Compare both with the agency; a later start date may suit applicants who are still waiting for permit processing."
+    },
+    {
+      "id": "L008",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/aktion-2-monate-mietfrei-gefoerderte-2-zimmerwohnung-1012173249/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1012173249 (agency ref ID 3313)",
+      "title": "PROMOTION: 2 months rent-free! Subsidised 2-room flat (Wartberg im Mürztal)",
+      "type": "apartment",
+      "location": {
+        "city": "Wartberg im Mürztal",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "8661 Wartberg im Mürztal (street address not given)",
+        "nearest_university_or_distance": "Not stated. Train station <1.5 km, supermarket/doctor/school/bank/post <500 m. Bruck an der Mur roughly 15-20 km and Leoben roughly 35 km away (my own estimates, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 435.41,
+        "utilities_included": "Total of 435.41 EUR/month = net rent 257.66 + operating costs 138.16 (395.82 excl. VAT) + VAT 39.59. Heating and electricity not mentioned, so probably extra: verify.",
+        "deposit_eur": 1485.66,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": 255.94,
+        "total_move_in_cost_eur": 2177.01
+      },
+      "details": {
+        "size_sqm": 56.75,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "2027-01-01 (flat currently being renovated)",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "price_discrepancy": {
+        "note": "The listing shows deposit 1,485.66 + financing contribution (Finanzierungsbeitrag) 255.94 in two places, but another passage says deposit 1,286.33 + contribution 264.55. Clarify the final amounts and whether the contribution is refundable. The 'Gesamtbelastung excl. VAT' of 395.82 also includes operating costs."
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "KDH Immobilien GmbH, Voitmann 43, 8271 Bad Waltersdorf (contact: Markus Unger-Ullmann)",
+        "contact": "Tel 0043 660 3213992 (as listed); website kaufdeinhaus.at",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated, but the listing says 'subsidised rental flat' (geförderte Mietwohnung). Subsidised flats in Styria usually have eligibility rules (residence status, income limits, main residence); not stated here.",
+        "No energy certificate has been presented by the owner yet."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "2 rooms plus separate kitchen room",
+        "Being renovated, rental start 1 January 2027",
+        "Promotion: 2 months rent-free (conditions not given)",
+        "Broker acts only for the landlord; the landlord pays the commission (first-client principle)"
+      ],
+      "assessment": {
+        "verdict": "unlikely",
+        "score": 30,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Unlimited lease and no commission for the tenant.",
+          "January 2027 start gives time for permit processing, and the rent-free promotion lowers early costs.",
+          "Largest flat so far (56.75 m², 2 rooms), suitable for two people if needed.",
+          "Registered agency with ref ID and a named contact."
+        ],
+        "risks": [
+          "Subsidised flat: eligibility rules likely apply (similar listings, e.g. L006, exclude non-EU applicants without long residence); the listing states no criteria, so confirm early.",
+          "Remote location, far from any university; commute or relocation needed.",
+          "Move-in cost is about 2,177 EUR (deposit plus financing contribution plus first rent), and the deposit and contribution figures conflict within the listing.",
+          "No exact street address, no photos or energy certificate mentioned, and the flat is not yet renovated.",
+          "Heating/electricity costs not stated."
+        ],
+        "questions_to_ask": [
+          "Are there eligibility criteria for this subsidised flat (citizenship/residence status, income limit, main residence)? Can a non-EU student abroad rent it?",
+          "What are the exact deposit and financing contribution (1,485.66 + 255.94 or 1,286.33 + 264.55), and is the contribution refundable?",
+          "What are the conditions of the '2 months rent-free' promotion, and what are the heating and electricity costs?",
+          "What is the exact address, and can photos or a video viewing be provided after the renovation?",
+          "Can the contract be signed remotely, with Meldezettel registration and a contract usable for a student residence permit?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Proof of residence/eligibility for subsidised housing (if required)"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 435,41 EUR (Gesamtmiete excl. USt 395,82, BK 138,16, USt 39,59). Kaution 1.485,66 plus Finanzierungsbeitrag 255,94. Mietbeginn 01.01.2027, unbefristet. Gefoerderte Mietwohnung, wird gerade saniert. Last modified 2026-10-15 11:20.",
+      "notes": "Check eligibility first; if it matches L006's rules, mark as rejected."
+    },
+    {
+      "id": "L009",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8700-leoben-charmante-1-zimmer-wohnung-1205532016/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1205532016 (agency ref ID 26-00388)",
+      "title": "8700 Leoben: Charming 1-room flat (Wohnhof LKH, Top 7, attic)",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Fischerauergasse 4, 8700 Leoben (attic flat, 3rd floor per description)",
+        "nearest_university_or_distance": "Montanuniversität Leoben about 2.3 km per the listing text; bus stop Leoben Annaberg (lines 820, 822, 832, 6810); close to LKH Hochsteiermark and the city centre."
+      },
+      "price": {
+        "rent_monthly_eur": 460.95,
+        "utilities_included": "Total of 460.95 EUR/month = net rent 252.00 + operating costs 102.90 + heating 58.80 + VAT 47.25 (headline 390.39 = rent + operating costs with VAT, excluding heating). Electricity/energy NOT included.",
+        "deposit_eur": 1380,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1840.95
+      },
+      "details": {
+        "size_sqm": 42,
+        "rooms": 1,
+        "furnished": "New fitted kitchen being installed, otherwise unfurnished",
+        "available_from": "2026-12 (partly renovated; completion expected mid-November 2026, move-in early December)",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Stefanie Körbisser Immobilien GmbH, Waagner-Biro-Straße 102, 8020 Graz (contact: MSc. Stefanie Körbisser)",
+        "contact": "Same agency as L005 and L007. Phones as pasted were garbled; most likely +43 316 282165 and +43 664 374 44 44 (the number given for viewing appointments). Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit; the listing invites a non-binding viewing appointment."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Currently being partly renovated; photos to follow",
+        "Hall, separate kitchen, living/bedroom, bathroom with shower and WC; no balcony listed",
+        "Parquet and tile floors, high period-building ceilings, satellite TV connection, green courtyard",
+        "Optional car space at 30.59 EUR/month gross; cellar compartment depending on availability",
+        "District heating; built 1920; energy class C (HWB 83), better than L005 and L007"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 66,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Cheapest of the three Leoben Wohnhof LKH flats (460.95 EUR/month, deposit 1,380 EUR, about 1,841 EUR to move in).",
+          "Close to the Montanuniversität Leoben (about 2.3 km per the listing); registered agency with ref ID and named contact.",
+          "Private-market rental, so the non-profit eligibility rules that may affect L001, L002 and L004 appear not to apply.",
+          "Fixed 5-year lease supports a permit file; best energy class of the three (C).",
+          "December start fits applicants who are still abroad."
+        ],
+        "risks": [
+          "Flat is still under renovation and no photos exist yet, so the final condition cannot be checked from abroad.",
+          "Top-floor attic flat; the listing does not mention a lift and shows no balcony.",
+          "Broker commission is not mentioned; clarify who pays.",
+          "Rent would start in December, which may be before the applicant can arrive: ask about a later start date.",
+          "Fixed 5-year term: check early termination terms. Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account.",
+          "The listing's floor data conflict (floor 0 in the data, 3rd floor in the description)."
+        ],
+        "questions_to_ask": [
+          "Is there any broker commission, and who pays it?",
+          "Can the start date be delayed until the applicant arrives or the permit is granted, and what happens if the permit is refused (termination)?",
+          "Can a non-EU student abroad sign remotely, and are photos or a video viewing possible after the renovation?",
+          "Is an Austrian bank account or guarantor required? Can the deposit be paid from abroad?",
+          "Is there a lift, and on which floor is the flat?",
+          "Will the contract be usable for a student residence permit, with Meldezettel registration possible?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 460,95 EUR (Hauptmietzins 252 + BK 102,90 + Heizkosten 58,80 + USt 47,25). Kaution 1.380. Mietdauer auf 5 Jahre befristet. Mietbeginn ab Dezember 2026, Fertigstellung Mitte November, Fotos folgen. Top 7, Dachgeschoss. Last modified 2026-10-15 10:15.",
+      "notes": "Best value of the Körbisser Wohnhof LKH flats (L005, L007, L009): ask the agency about all three in one message and compare terms."
+    },
+    {
+      "id": "L010",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/mietwohnung-in-eisenerz-901606921/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 901606921 (landlord ref ID 35489)",
+      "title": "Rental flat in Eisenerz (2 rooms, balcony; housing support available)",
+      "type": "apartment",
+      "location": {
+        "city": "Eisenerz",
+        "district": "Leoben, Styria",
+        "address": "Vordernberger Straße 95, 8790 Eisenerz",
+        "nearest_university_or_distance": "Not stated. Eisenerz is a small, remote mountain town; Leoben (nearest university town) is roughly 35-40 km away (my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 437.96,
+        "utilities_included": "Unclear. Headline 'Gesamtmiete incl. VAT' is 437.96 after a 100 EUR monthly subsidy is deducted. Separately listed: additional costs 146.31 and heating costs 45.92 per month; it is not stated whether these are inside the 437.96. If heating is extra, total is about 484 EUR; if both are extra, about 630 EUR. Verify.",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 46.72,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Siedlungsstraße 2, 8940 Liezen (same landlord as L002)",
+        "contact": "Lisa Kalsberger, tel 03612 273269 (as listed in L002); via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. Subsidy conditions are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Living room, bedroom, kitchenette, hall, bathroom/WC, balcony and cellar compartment",
+        "Built 1990",
+        "Housing cooperative start-up subsidy: 100 EUR/month deducted from the stated rent, falling by 20 EUR per year"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 40,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord (same as L002), available immediately.",
+          "2 rooms with balcony and cellar; space for two people if needed."
+        ],
+        "risks": [
+          "Remote location, far from any university: only suitable for someone studying near Eisenerz, or willing to commute a long way.",
+          "The 100 EUR subsidy falls by 20 EUR each year, so rent rises (about 537.96 EUR in year five if the 437.96 figure stays as is).",
+          "Total monthly cost is unclear and could be much higher than the headline price once operating and heating costs are added.",
+          "Deposit, lease type and any cooperative share/financing contribution are not stated.",
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Is the 437.96 EUR rent inclusive of the 146.31 EUR operating costs and 45.92 EUR heating? What is the full monthly cost, including electricity?",
+          "What is the deposit, and is there any cooperative share or financing contribution due at move-in?",
+          "Is the lease unlimited or fixed-term, and for how long does the subsidy run (start-up subsidy conditions)?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete inkl. MWSt 437,96 (9,37/m²); Nebenkosten 146,31; Heizkosten 45,92; Zuschuss 100,00 abgezogen, jaehrlich um 20,00 reduziert; verfuegbar ab sofort; Baujahr 1990. Last modified 2026-10-15 02:20.",
+      "notes": "Same landlord as L002, so one message to Lisa Kalsberger can cover both. A larger and costlier alternative to L002 (36 m², 262.70 EUR). The pasted text had no phone number; re-copy it from the listing if needed."
+    },
+    {
+      "id": "L011",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/mietwohnung-in-eisenerz-1080519111/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1080519111 (landlord ref ID 32891)",
+      "title": "Rental flat in Eisenerz (1 room, loggia, 2nd floor; housing support possible)",
+      "type": "apartment",
+      "location": {
+        "city": "Eisenerz",
+        "district": "Leoben, Styria",
+        "address": "Tendlerstraße 2, 8790 Eisenerz",
+        "nearest_university_or_distance": "Not stated. Eisenerz is a small, remote mountain town; Leoben (nearest university town) is roughly 35-40 km away (my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 357.69,
+        "utilities_included": "Unclear. Listed separately: additional costs 119.05 and heating costs 50.23 per month; it is not stated whether these are inside the 357.69. Range: about 408 EUR if only heating is extra, about 527 EUR if both are extra (electricity extra either way). The text says housing support is possible but no subsidy deduction is mentioned for this flat; verify.",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 31.98,
+        "rooms": 1,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Siedlungsstraße 2, 8940 Liezen (same landlord as L002 and L010)",
+        "contact": "Lisa Kalsberger, tel 03612 273269; via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. Conditions for the 'housing support' (Wohnunterstützung) are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "2nd floor, living/sleeping room, kitchenette, hall, bathroom/WC, loggia, storage room and cellar compartment",
+        "One parking space included in the listing data",
+        "Energy: HWB 102.19 kWh/m²/year, fGEE 1.5"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 42,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord (same as L002 and L010), available immediately.",
+          "Lowest headline price of the Eisenerz flats with a loggia, cellar, storage room and parking space."
+        ],
+        "risks": [
+          "Remote location, far from any university: only suitable for someone studying near Eisenerz, or willing to commute a long way.",
+          "Total monthly cost unclear (could be about 408 to 527 EUR plus electricity).",
+          "Housing support is mentioned, but it is not stated how much or for how long; it may reduce each year as in the other Ennstal flats.",
+          "Deposit, lease type and any cooperative share/financing contribution are not stated.",
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Does the 357.69 EUR include operating costs (119.05) and heating (50.23)? What is the full monthly cost, including electricity?",
+          "What does the 'housing support' consist of, how much is it, and for how long?",
+          "What is the deposit, and is there any cooperative share or financing contribution due at move-in?",
+          "Is the lease unlimited or fixed-term?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 357.69 (11.18/m²); Nebenkosten 119.05; Heizkosten 50.23; Wohnunterstuetzung moeglich; 2. Obergeschoss mit Loggia; Stellplatz 1; verfuegbar ab sofort; HWB 102.19. Last modified 2026-10-15 02:20.",
+      "notes": "Same landlord as L002 and L010: one message to Lisa Kalsberger can cover all three Eisenerz flats (L002, L010, L011). Eisenerz is the weakest location for a student; consider these only if the applicant will study or work nearby."
+    },
+    {
+      "id": "L012",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/2-zimmer-mietwohnung-in-vordernberg-1844561367/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1844561367 (landlord ref ID 41871)",
+      "title": "2-room rental flat in Vordernberg (former station building)",
+      "type": "apartment",
+      "location": {
+        "city": "Vordernberg",
+        "district": "Leoben, Styria",
+        "address": "Bahnhofstraße 5, 8794 Vordernberg (1st floor; former Vordernberg-Markt station converted to housing in 1993)",
+        "nearest_university_or_distance": "Not stated. Vordernberg is a small town roughly 10-15 km from Leoben (my own estimate, verify), closer than Eisenerz."
+      },
+      "price": {
+        "rent_monthly_eur": 367.17,
+        "utilities_included": "Unclear. Listed separately: additional costs 106.12 and heating costs 92.60 per month; it is not stated whether these are inside the 367.17. Range: about 460 EUR if only heating is extra, about 566 EUR if both are extra (electricity extra either way). A subsidy of 100 EUR is mentioned but it is not stated whether it is already deducted from 367.17.",
+        "deposit_eur": 1776.87,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 2144.04
+      },
+      "details": {
+        "size_sqm": 47.16,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Siedlungsstraße 2, 8940 Liezen (same landlord as L002, L010 and L011)",
+        "contact": "Lisa Kalsberger, tel 03612 273269; via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. Subsidy (Zuschuss 100 EUR) conditions are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "1st floor: living room, dining room, bedroom, kitchen, hall, bathroom, separate WC, storage space, cellar compartment",
+        "One parking space",
+        "Built/converted 1993; energy HWB 146.33 kWh/m²/year (poor efficiency, expect higher heating costs), fGEE 1.75"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 48,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord, available immediately.",
+          "Closer to Leoben than the Eisenerz flats, with a train station connection nearby (former station building).",
+          "2 rooms with parking space; good space for one or two people."
+        ],
+        "risks": [
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "High deposit (1,776.87 EUR); about 2,144 EUR to move in with the first rent, before any cooperative share.",
+          "Total monthly cost unclear and heating costs are high (92.60 EUR; poor energy rating).",
+          "Subsidy of 100 EUR is mentioned but its conditions and duration are not (it may shrink yearly like the other Ennstal flats).",
+          "Lease type and cooperative share/financing contribution not stated.",
+          "Still some distance from the university; check the commute from Vordernberg to Leoben and the train schedule.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Is the 367.17 EUR rent inclusive of the 106.12 EUR operating costs and 92.60 EUR heating? What is the full monthly cost including electricity?",
+          "Is the 100 EUR subsidy already deducted, for how long does it run, and does it shrink each year?",
+          "Is the lease unlimited or fixed-term, and is there any cooperative share or financing contribution at move-in besides the 1,776.87 EUR deposit?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 367.17 (7.79/m²); Kaution 1.776,87; Nebenkosten 106,12; Heizkosten 92,60; Zuschuss EUR 100,00; 1. Obergeschoss; 1 Stellplatz; Baujahr 1993; HWB 146,33; verfuegbar ab sofort. Last modified 2026-10-15 02:20.",
+      "notes": "Same landlord as L002, L010 and L011: one message to Lisa Kalsberger can cover all four Ennstal flats. Of those four, this one is the closest to Leoben, but it has the highest deposit and poor energy efficiency."
+    },
+    {
+      "id": "L013",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/mietwohnung-in-vordernberg-1287290720/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1287290720 (landlord ref ID 34873)",
+      "title": "Rental flat in Vordernberg (2 rooms, 71.76 m², town centre; housing support possible)",
+      "type": "apartment",
+      "location": {
+        "city": "Vordernberg",
+        "district": "Leoben, Styria",
+        "address": "Viktor Zack Straße 1, 8794 Vordernberg (town centre)",
+        "nearest_university_or_distance": "Not stated. Vordernberg is a small town roughly 10-15 km from Leoben (my own estimate, verify), closer than Eisenerz."
+      },
+      "price": {
+        "rent_monthly_eur": 419.85,
+        "utilities_included": "Unclear. Headline 'Gesamtmiete incl. VAT' is 419.85. Listed separately: additional costs 108.90 and heating costs 90.30 per month; it is not stated whether these are inside the 419.85. Range: about 510 EUR if only heating is extra, about 619 EUR if both are extra (electricity extra either way). A subsidy of 100 EUR is mentioned but it is not stated whether it is already deducted.",
+        "deposit_eur": 1559.55,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1979.4
+      },
+      "details": {
+        "size_sqm": 71.76,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Siedlungsstraße 2, 8940 Liezen (same landlord as L002, L010, L011 and L012)",
+        "contact": "Lisa Kalsberger, tel 03612 273269; via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. Subsidy (Zuschuss 100 EUR, 'housing support possible') conditions are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Living room, bedroom, kitchen, hall, bathroom, separate WC, storage room",
+        "Large flat for 2 rooms (71.76 m²), low rent per m² (5.85 EUR)",
+        "Built 1989; energy HWB 113 kWh/m²/year, fGEE 1.41",
+        "No parking, cellar or balcony mentioned"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 50,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord, available immediately.",
+          "Very large flat at a low price per m²; could suit two people (check occupancy rules).",
+          "In the centre of Vordernberg, closer to Leoben than the Eisenerz flats.",
+          "Better energy rating (HWB 113) than L012."
+        ],
+        "risks": [
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Total monthly cost unclear (about 510 to 619 EUR plus electricity) and heating is high (90.30 EUR).",
+          "Deposit 1,559.55 EUR; about 1,979 EUR to move in with the first rent, before any cooperative share.",
+          "Housing support is mentioned, but its amount, duration and conditions are not (it may shrink yearly like the other Ennstal flats).",
+          "Lease type and cooperative share/financing contribution not stated.",
+          "A large flat means higher total costs for a single student; the commute from Vordernberg to Leoben needs checking.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Is the 419.85 EUR rent inclusive of the 108.90 EUR operating costs and 90.30 EUR heating? What is the full monthly cost including electricity?",
+          "Is the 100 EUR subsidy already deducted, for how long does it run, and does it shrink each year?",
+          "Is the lease unlimited or fixed-term, and is there any cooperative share or financing contribution at move-in besides the 1,559.55 EUR deposit?",
+          "How many people may live in the flat (is it open to two students sharing)?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete inkl. MWSt 419,85 (5,85/m²); Kaution 1.559,55; Nebenkosten 108,90; Heizkosten 90,30; Zuschuss EUR 100,00; Wohnunterstuetzung moeglich; Baujahr 1989; HWB 113; verfuegbar ab sofort. Last modified 2026-10-15 02:20.",
+      "notes": "Same landlord as L002, L010, L011 and L012: one message to Lisa Kalsberger can cover all five Ennstal flats. Of the Ennstal flats so far this is the best candidate (central town, better energy rating), but eligibility must be checked."
+    },
+    {
+      "id": "L014",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/mietwohnung-in-vordernberg-1528591229/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1528591229 (landlord ref ID 34879)",
+      "title": "Rental flat in Vordernberg (3 rooms, 71.36 m², town centre; housing support possible)",
+      "type": "apartment",
+      "location": {
+        "city": "Vordernberg",
+        "district": "Leoben, Styria",
+        "address": "Viktor Zack Straße 1, 8794 Vordernberg (town centre; same address as L013)",
+        "nearest_university_or_distance": "Not stated. Vordernberg is a small town roughly 10-15 km from Leoben (my own estimate, verify), closer than Eisenerz."
+      },
+      "price": {
+        "rent_monthly_eur": 417.11,
+        "utilities_included": "Unclear. Listed separately: additional costs 108.30 and heating costs 89.80 per month; it is not stated whether these are inside the 417.11. Range: about 507 EUR if only heating is extra, about 615 EUR if both are extra (electricity extra either way). A subsidy of 100 EUR is mentioned but it is not stated whether it is already deducted.",
+        "deposit_eur": 1551.33,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1968.44
+      },
+      "details": {
+        "size_sqm": 71.36,
+        "rooms": 3,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "Gemeinnützige Wohn- und Siedlungsgenossenschaft Ennstal (Wohnbaugruppe Ennstal), Siedlungsstraße 2, 8940 Liezen (same landlord as L002, L010, L011, L012 and L013)",
+        "contact": "Lisa Kalsberger, tel 03612 273269; via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. Subsidy (Zuschuss 100 EUR, 'housing support possible') conditions are not described."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Living room, bedroom, children's room, kitchen, hall, bathroom, separate WC",
+        "District heating central heating",
+        "Built 1989; energy HWB 112.36 kWh/m²/year, fGEE 1.41",
+        "No parking, cellar or balcony mentioned"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 50,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine non-profit housing cooperative as landlord, available immediately.",
+          "Three rooms at a low price per m² (5.85 EUR); could suit two people sharing (check occupancy rules).",
+          "In the centre of Vordernberg, closer to Leoben than the Eisenerz flats.",
+          "Reasonable energy rating (HWB 112.36)."
+        ],
+        "risks": [
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Total monthly cost unclear (about 507 to 615 EUR plus electricity) and heating is high (89.80 EUR).",
+          "Deposit 1,551.33 EUR; about 1,968 EUR to move in with the first rent, before any cooperative share.",
+          "Housing support is mentioned, but its amount, duration and conditions are not (it may shrink yearly like the other Ennstal flats).",
+          "Lease type and cooperative share/financing contribution not stated.",
+          "Large flat means higher total costs for a single student; the commute from Vordernberg to Leoben needs checking.",
+          "Cooperatives often need an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Is the 417.11 EUR rent inclusive of the 108.30 EUR operating costs and 89.80 EUR heating? What is the full monthly cost including electricity?",
+          "Is the 100 EUR subsidy already deducted, for how long does it run, and does it shrink each year?",
+          "Is the lease unlimited or fixed-term, and is there any cooperative share or financing contribution at move-in besides the 1,551.33 EUR deposit?",
+          "How many people may live in the flat (is it open to two or three students sharing)?",
+          "Do you rent to non-EU students who are abroad, and can the contract be signed remotely? Is an Austrian bank account required?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the cooperative",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 417,11 (5,85/m²); Kaution 1.551,33; Nebenkosten 108,30; Heizkosten 89,80; Zuschuss EUR 100,00; Wohnunterstuetzung moeglich; Fernwaerme-Zentralheizung; Baujahr 1989; HWB 112,36; verfuegbar ab sofort. Last modified 2026-10-15 02:20.",
+      "notes": "Almost the same as L013 (same building address, 3 rooms instead of 2, 0.40 m² smaller, 2.74 EUR cheaper per month, deposit 8 EUR lower). One message to Lisa Kalsberger can cover all six Ennstal flats (L002, L010-L014); ask whether both Vordernberg flats are still free and which one fits."
+    },
+    {
+      "id": "L015",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/otto-hauberger-strasse-38-3-wohnung-im-1-og-1379691746/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1379691746",
+      "title": "Otto-Hauberger-Straße 38/3, flat on the 1st floor (Kapfenberg)",
+      "type": "apartment",
+      "location": {
+        "city": "Kapfenberg",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Otto-Hauberger-Straße 38 (Top 3), 8605 Kapfenberg (1st floor)",
+        "nearest_university_or_distance": "Not stated. Bus stop, railway station, shops, school and kindergarten nearby. Kapfenberg has a university of applied sciences campus (FH Joanneum, from my general knowledge); Leoben is roughly 20 km away (my estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 445.32,
+        "utilities_included": "Headline 'Gesamtmiete incl. VAT' is 445.32. Not stated whether heating (gas) and electricity are included; assume extra and verify.",
+        "deposit_eur": 1335.96,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1781.28
+      },
+      "details": {
+        "size_sqm": 54.3,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GEMYSAG Gemeinnützige Mürz-Ybbs Siedlungsanlagen GmbH (non-profit developer), Am Sagacker 2a, 8605 Kapfenberg (same landlord as L004)",
+        "contact": "GEMYSAG Vermarktung, tel 050 8882, email vermarktung@gemysag.at. Enquiries only by phone or email.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "As a non-profit developer, flats are only allocated to applicants who are registered with GEMYSAG and eligible for subsidised housing (förderbar). Applicants must first register as 'wohnungssuchend' (details on gemysag.at)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "1st floor: hall, kitchen, 2 rooms, bathroom with WC, cellar compartment",
+        "Quiet location; gas heating; energy HWB 63.8 kWh/m²/year, fGEE 1.22 (efficient)"
+      ],
+      "assessment": {
+        "verdict": "unlikely",
+        "score": 28,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit landlord, genuine company contact details, available immediately.",
+          "Unlimited lease, efficient energy rating, flat with 2 rooms and cellar.",
+          "Better located than the Eisenerz/Vordernberg flats: Kapfenberg has a station and is close to Bruck an der Mur."
+        ],
+        "risks": [
+          "Allocation is restricted to registered, subsidy-eligible applicants. Eligibility criteria typically include income limits and residence status/main residence in Austria, which applicants still in Nigeria are unlikely to meet. This is the key blocker, to be confirmed with GEMYSAG (same issue as L004).",
+          "Enquiries accepted only by phone or email, which makes contact from abroad harder.",
+          "Gas heating and electricity costs are not stated; deposit of 1,335.96 EUR (about 1,781 EUR to move in with the first rent).",
+          "Lease signing process, remote signing and Meldezettel registration are not stated."
+        ],
+        "questions_to_ask": [
+          "Can a non-EU student who is still abroad register as an applicant (wohnungssuchend), and what are the eligibility criteria (income limits, residence status, minimum residence period)?",
+          "Is the 445.32 EUR rent inclusive of heating and operating costs? What is the full monthly cost including electricity and gas?",
+          "Can the contract be signed remotely, with a Meldezettel registration afterwards, and will the contract be usable for a student residence permit?"
+        ],
+        "documents_likely_needed": [
+          "GEMYSAG registration as an applicant (Wohnungsansuchen)",
+          "Proof of income and of residence/main residence in Austria",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete inkl. MWSt 445,32 (8,20/m²); Kaution 1.335,96; unbefristet; Gasheizung; HWB 63,8. Als gemeinnuetziger Bautraeger koennen wir unsere Wohnungen nur an bei uns registrierte und foerderbare Wohnungswerber vergeben. Last modified 2026-10-14 14:34.",
+      "notes": "Same landlord and same allocation rule as L004: one phone call or email to GEMYSAG can settle eligibility for both. If non-EU students abroad are not eligible, mark both as rejected."
+    },
+    {
+      "id": "L016",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8700-leoben-kompakter-single-hit-im-2-og-1663320860/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1663320860 (agency ref ID 26-00386)",
+      "title": "8700 Leoben: Compact single flat on the 2nd floor (Wohnhof LKH, Top 11)",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Schlachthofgasse 2, 8700 Leoben (2nd floor)",
+        "nearest_university_or_distance": "Montanuniversität Leoben about 2.3 km per the listing text; bus stop Leoben Annaberg (lines 820, 822, 832, 6810); close to LKH Hochsteiermark and the city centre."
+      },
+      "price": {
+        "rent_monthly_eur": 442.4,
+        "utilities_included": "Total of 442.40 EUR/month = net rent 259.00 + operating costs 88.20 + heating 50.40 + VAT 44.80 (headline 381.92 = rent + operating costs with VAT, excluding heating). Electricity/energy NOT included.",
+        "deposit_eur": 1330,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1772.4
+      },
+      "details": {
+        "size_sqm": 36,
+        "rooms": 1,
+        "furnished": "Fitted kitchen included, otherwise unfurnished",
+        "available_from": "2026-10 (immediately)",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Stefanie Körbisser Immobilien GmbH, Waagner-Biro-Straße 102, 8020 Graz (contact: MSc. Stefanie Körbisser)",
+        "contact": "Same agency as L005, L007 and L009. Phones as pasted were garbled; most likely +43 316 282165 and +43 664 374 44 44 (the number given for viewing appointments). Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit; the listing invites a non-binding viewing appointment."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Condition very good/good; hall, separate kitchen with fully fitted kitchenette, living/bedroom, bathroom with shower and WC; no balcony listed",
+        "Parquet and tile floors, satellite TV connection, green courtyard",
+        "Optional car space at 30.59 EUR/month gross; cellar compartment depending on availability",
+        "District heating; energy class D (HWB 122)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 67,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Cheapest of the four Körbisser Leoben flats in total cost (442.40 EUR/month; deposit 1,330 EUR; about 1,772 EUR to move in).",
+          "Available now in good condition (no renovation pending), so photos and a viewing are less uncertain than for L007 and L009.",
+          "Close to the Montanuniversität Leoben (about 2.3 km per the listing); registered agency with ref ID and named contact.",
+          "Private-market rental, so the non-profit eligibility rules that may affect L001, L002 and L004 appear not to apply.",
+          "Fixed 5-year lease supports a permit file."
+        ],
+        "risks": [
+          "Smallest of the group (36 m²), no balcony listed, energy class D.",
+          "Rent may start in October, before the applicant can arrive (permit processing time): ask about a later start date.",
+          "Broker commission is not mentioned; clarify who pays.",
+          "Fixed 5-year term: check early termination terms. Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account.",
+          "Electricity is not included in the monthly cost."
+        ],
+        "questions_to_ask": [
+          "Is there any broker commission, and who pays it?",
+          "Can the start date be delayed until the applicant arrives or the permit is granted, and what happens if the permit is refused (termination)?",
+          "Can a non-EU student abroad sign remotely, and is a video viewing or photos possible?",
+          "Is an Austrian bank account or guarantor required? Can the deposit be paid from abroad?",
+          "Will the contract be usable for a student residence permit, with Meldezettel registration possible?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 442,40 EUR (Hauptmietzins 259 + BK 88,20 + Heizkosten 50,40 + USt 44,80). Kaution 1.330. Mietdauer befristet auf 5 Jahre. Mietbeginn ab Oktober 2026. Top 11, 2. Obergeschoss. Last modified 2026-10-14 14:10.",
+      "notes": "Strongest candidate so far on price and certainty (available now, no renovation). Ask the agency about all four Wohnhof LKH flats (L005, L007, L009, L016) in one message and compare terms; the key shared questions are remote signing, broker fee, start date and termination."
+    },
+    {
+      "id": "L017",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8790-eisenerz-vordernbergerstrasse-77-eg-3-922744451/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 922744451",
+      "title": "8790 Eisenerz, Vordernbergerstraße 77/EG/3 (2 rooms, ground floor)",
+      "type": "apartment",
+      "location": {
+        "city": "Eisenerz",
+        "district": "Leoben, Styria",
+        "address": "Vordernbergerstraße 87, 8790 Eisenerz (the title says Vordernbergerstraße 77/EG/3 and the data says Top 2; the listing is inconsistent)",
+        "nearest_university_or_distance": "Not stated. Eisenerz is a small, remote mountain town; Leoben (nearest university town) is roughly 35-40 km away (my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 440.64,
+        "utilities_included": "Not stated whether operating costs and heating are included in the 440.64 (price per m² 10.25 EUR); verify the full monthly cost including district heating and electricity.",
+        "deposit_eur": 1321.92,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1762.56
+      },
+      "details": {
+        "size_sqm": 43,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "by arrangement",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GIWOG Gemeinnützige Industrie-Wohnungs-AG (non-profit housing company), Welser Straße 41, 4060 Leonding; contact: Kundencenter Trofaiach",
+        "contact": "Tel 050 8888 300 (Kundencenter Trofaiach); via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. As a non-profit housing company, eligibility rules may apply (not stated)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Renovated; ground floor (level 0) with lift access in the building and a cellar",
+        "District heating",
+        "No broker commission"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 40,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit housing company with a regional customer centre in Trofaiach; no broker fee.",
+          "Unlimited lease, renovated flat, ground floor with lift in the building.",
+          "Start date by arrangement, so it can fit the applicant's arrival."
+        ],
+        "risks": [
+          "Remote location, far from any university: only suitable for someone studying or working near Eisenerz, or willing to commute a long way.",
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Total monthly cost unclear (heating and operating costs not shown); about 1,763 EUR to move in with the first rent.",
+          "The listing is inconsistent about the address and flat number (77/EG/3 in the title, Vordernbergerstraße 87 in the address, Top 2 in the data), so confirm exactly which flat is offered.",
+          "Very little description or detail, no photos in the pasted text.",
+          "Landlord may require an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "What is the exact address and flat number, and what is the full monthly cost (operating costs, district heating, electricity)?",
+          "Are there eligibility criteria for applicants (residence status, income limits, main residence)? Can a non-EU student abroad rent it?",
+          "Is there any cooperative share or financing contribution on top of the 1,321.92 EUR deposit?",
+          "Can the start date be set to the applicant's arrival, and can the contract be signed remotely?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the housing company",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 440,64 (10,25/m²); Kaution 1.321,92; Maklerprovision keine; Zustand renoviert; Erdgeschoss, Fahrstuhl, Keller; unbefristet; Fernwaerme; verfuegbar nach Vereinbarung. Last modified 2026-10-14 13:50.",
+      "notes": "Other similar flats in the same building (Vordernbergerstraße 77) appeared as suggestions on other listings (e.g. 42 m², 393.27 EUR); send those links if you want them tracked too."
+    },
+    {
+      "id": "L018",
+      "added_date": "2026-10-18",
+      "status": "rejected",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/gut-aufgeteilte-2-zimmer-wohnung-im-erdgeschoss-gefoerderte-miete-2-zimmer-1038237732/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1038237732 (landlord ref ID 351701_0003)",
+      "title": "Well laid out 2-room ground-floor flat, subsidised rent (Vordernberg)",
+      "type": "apartment",
+      "location": {
+        "city": "Vordernberg",
+        "district": "Leoben, Styria",
+        "address": "Schönauweg 12/3, 8794 Vordernberg (ground floor)",
+        "nearest_university_or_distance": "Not stated. Vordernberg is a small town roughly 10-15 km from Leoben (my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 447,
+        "utilities_included": "Rent includes operating costs and an advance payment (aconto) for heating; excludes electricity.",
+        "deposit_eur": 2000,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 2447
+      },
+      "details": {
+        "size_sqm": 52.7,
+        "rooms": 2,
+        "furnished": "No kitchen unit included",
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "ÖWG Wohnbau, Moserhofgasse 14, 8010 Graz (contact: Michaela Fuchs; same landlord as L006)",
+        "contact": "Tel 0043 316 8055531; viewing by appointment with the sales team",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "Subsidised flat: tenant must be an Austrian citizen, an EU citizen or equivalent, or have lived more than 5 years in Austria with a valid work permit.",
+        "Net annual household income limit: 49,600 EUR for 1 person, 74,400 EUR for 2 people, plus 6,570 EUR per additional person.",
+        "The flat must be the tenant's main residence.",
+        "Joining the housing cooperative is mandatory when renting (a membership share is likely due; the amount is not stated)."
+      ],
+      "features": [
+        "Ground floor: kitchen (no kitchen unit), living room, bedroom, bathroom with window, WC, hall, storage room, cellar",
+        "Central heating; built 1969; energy class C (HWB 71.7)",
+        "Commission-free; one dog allowed (no listed breeds)"
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": "Viewing possible by appointment; not stated whether required",
+      "assessment": {
+        "verdict": "unsuitable",
+        "score": 5,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine housing company with named contact and reference ID.",
+          "Commission-free, rent includes operating costs and heating advance; good energy class."
+        ],
+        "risks": [
+          "Eligibility rules explicitly exclude the likely applicants: non-EU nationals need more than 5 years of residence in Austria with a work permit.",
+          "Subsidised flats must be the main residence and have income limits.",
+          "Mandatory cooperative membership and a 2,000 EUR deposit, so a high upfront cost (at least 2,447 EUR with the first rent, plus a membership share).",
+          "No kitchen unit included."
+        ],
+        "questions_to_ask": [],
+        "documents_likely_needed": []
+      },
+      "raw_text_excerpt": "Es handelt sich um eine gefoerderte Wohnung ... 1) Oesterreichische Staatsbuergerschaft, EU-Buerger oder gleichgestellte Personen bzw. Aufenthalt laenger als 5 Jahre in Oesterreich mit aufrechter Arbeitsbewilligung. 2) Einkommensgrenzen ... 3) Hauptwohnsitz. Beitritt zur Genossenschaft verpflichtend. Kaution 2000 Eur. Provisionsfrei. Last modified 2026-10-14 13:30.",
+      "notes": "Marked 'rejected' for the same reason as L006 (same landlord, same eligibility rule). ÖWG's other 'geförderte Miete' listings will have the same restriction; no need to send more of them."
+    },
+    {
+      "id": "L019",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/etmissl-etmissl-135-5-wohnung-im-eg-1868897189/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1868897189",
+      "title": "Etmißl, Etmißl 135/5 - ground-floor flat",
+      "type": "apartment",
+      "location": {
+        "city": "Etmißl",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Etmißl 135 (Top 5), 8622 Etmißl (ground floor)",
+        "nearest_university_or_distance": "Not stated. Etmißl is a very small rural village; Bruck an der Mur/Kapfenberg are the nearest towns and Leoben is further away (my own estimate: 25-40 km, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 360.13,
+        "utilities_included": "Headline 'Gesamtmiete incl. VAT' is 360.13. Not stated whether heating (gas) and electricity are included; assume extra and verify.",
+        "deposit_eur": null,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": 4661.13,
+        "total_move_in_cost_eur": 5021.26
+      },
+      "details": {
+        "size_sqm": 49.87,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "financing_contribution": {
+        "amount_eur": 4661.13,
+        "note": "The listing shows 4,661.13 EUR as 'Finanzierungsbeitrag' in the deposit field. This is a one-off financing contribution (typically partly refundable when leaving, minus a yearly deduction), not a normal deposit. Clarify what is refundable, and whether there is a separate deposit."
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GEMYSAG Gemeinnützige Mürz-Ybbs Siedlungsanlagen GmbH (non-profit developer), Am Sagacker 2a, 8605 Kapfenberg (same landlord as L004 and L015)",
+        "contact": "GEMYSAG Vermarktung, tel 050 8882, email vermarktung@gemysag.at. Enquiries only by phone or email.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "As a non-profit developer, flats are only allocated to applicants who are registered with GEMYSAG and eligible for subsidised housing (förderbar). Applicants must first register as 'wohnungssuchend' (details on gemysag.at)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Ground floor: hall, kitchen, 2 rooms, bathroom with WC, cellar compartment, terrace, parking space",
+        "Quiet location; gas heating; energy HWB 74.1 kWh/m²/year, fGEE 1.32 (efficient)"
+      ],
+      "assessment": {
+        "verdict": "unlikely",
+        "score": 15,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit landlord, genuine company contact details, available immediately.",
+          "Unlimited lease, low rent for the size, terrace and parking space included, good energy rating."
+        ],
+        "risks": [
+          "Allocation is restricted to registered, subsidy-eligible applicants. Eligibility criteria typically include income limits and residence status/main residence in Austria, which applicants still in Nigeria are unlikely to meet (same issue as L004 and L015).",
+          "Very high upfront cost: a 4,661.13 EUR financing contribution (about 5,021 EUR with the first rent).",
+          "Very small rural village with no university and limited public transport: only suitable if the applicant will work or study nearby.",
+          "Enquiries accepted only by phone or email, which makes contact from abroad harder.",
+          "Heating and electricity costs are not stated."
+        ],
+        "questions_to_ask": [
+          "Can a non-EU student who is still abroad register as an applicant (wohnungssuchend), and what are the eligibility criteria (income limits, residence status, minimum residence period)?",
+          "What exactly is the 4,661.13 EUR financing contribution: how much is refundable, and is there a separate deposit?",
+          "Is the 360.13 EUR rent inclusive of heating and operating costs? What is the full monthly cost including electricity and gas?"
+        ],
+        "documents_likely_needed": [
+          "GEMYSAG registration as an applicant (Wohnungsansuchen)",
+          "Proof of income and of residence/main residence in Austria",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete inkl. MWSt 360,13 (7,22/m²); 4.661,13 Finanzierungsbeitrag (Kaution); unbefristet; Gasheizung; HWB 74,1; Erdgeschoss mit Terrasse und Abstellplatz. Als gemeinnuetziger Bautraeger koennen wir unsere Wohnungen nur an bei uns registrierte und foerderbare Wohnungswerber vergeben. Last modified 2026-10-14 13:18.",
+      "notes": "Same landlord and allocation rule as L004 and L015: one call or email to GEMYSAG can settle eligibility for all three. If non-EU students abroad are not eligible, mark them as rejected."
+    },
+    {
+      "id": "L020",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/charmante-2-zimmer-wohnung-mit-balkon-in-gepflegter-wohnanlage-1793964191/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1793964191 (agency ref ID 3812/454)",
+      "title": "Charming 2-room flat with balcony in a well-kept residential complex (Kapfenberg)",
+      "type": "apartment",
+      "location": {
+        "city": "Kapfenberg",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "8605 Kapfenberg (street address not given)",
+        "nearest_university_or_distance": "Listing data says 'university <2000 m' (Kapfenberg has a university of applied sciences campus, FH Joanneum, from my general knowledge), railway station <1.5 km, doctor/pharmacy/school/supermarket <500 m, motorway access <1 km."
+      },
+      "price": {
+        "rent_monthly_eur": 750,
+        "utilities_included": "IMPORTANT: the headline shows 450 EUR as 'Gesamtbelastung', but the description says: net rent 450 EUR + operating costs 300 EUR including heating = total rent 750 EUR per month. Use 750 EUR for budgeting; electricity is presumably extra. Ask the agency to confirm in writing.",
+        "deposit_eur": null,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": null
+      },
+      "details": {
+        "size_sqm": 52,
+        "rooms": 2,
+        "furnished": "Fitted kitchen included, otherwise unfurnished",
+        "available_from": "immediately",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "deposit_note": "Deposit is '3 gross monthly rents': about 2,250 EUR if based on 750 EUR (or about 1,350 EUR if based on 450 EUR). Total move-in cost would be about 3,000 EUR (or 1,800 EUR). Clarify which base applies.",
+      "landlord": {
+        "type": "agency",
+        "name": "REMAX Smart, Wiener Straße 46, 8605 Kapfenberg (contact: Mohammad Alzayanat)",
+        "contact": "Phones as pasted were garbled (1004368120403406 and 2004368120403406); most likely +43 681 20403406. Verify before use. Contact via the willhaben form is also possible.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit (3 gross monthly rents)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Living room about 20 m², separate kitchen about 7.6 m² (fitted), bedroom about 14.2 m² with access to a balcony of about 5.9 m², bathroom with shower, separate WC, hall",
+        "Parquet floors, gas central heating, cellar, garage and parking space listed",
+        "Well-kept complex with green areas and a children's playground",
+        "Energy class C (HWB 70.49)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 45,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Private-market rental via a REMAX agency, so the non-profit eligibility rules appear not to apply.",
+          "Available now, with a fixed 5-year lease, which supports a permit file.",
+          "University/FH campus within about 2 km according to the listing; station about 1.5 km; good local services.",
+          "Landlord pays the broker commission (first-client principle); good energy class; garage/parking and balcony.",
+          "Two real rooms: could suit two students sharing, which would halve the cost per person."
+        ],
+        "risks": [
+          "Real monthly cost is 750 EUR (not the 450 EUR in the headline), the highest of all tracked flats; electricity not included.",
+          "Deposit of 3 gross monthly rents (about 2,250 EUR) and about 3,000 EUR to move in with the first rent.",
+          "Inconsistent price display and wording on the broker's role (the text says both 'double broker' and acting only for the landlord): ask for a written breakdown.",
+          "Fixed 5-year term: check early termination terms and sublet rules if two people share. Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account.",
+          "Street address not given."
+        ],
+        "questions_to_ask": [
+          "Please confirm the total monthly cost: 450 EUR net rent + 300 EUR operating costs including heating = 750 EUR? What is the electricity cost estimate?",
+          "What is the deposit base (3 x 750 or 3 x 450), and who pays the broker commission?",
+          "Can a non-EU student abroad sign remotely, and is a video viewing possible? Is an Austrian bank account or guarantor required?",
+          "Can two students share the flat and register there (Meldezettel), and what are the termination terms for the 5-year lease (for example if a permit is refused)?",
+          "Will the contract be usable for a student residence permit?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Kosten: Kaltmiete EUR 450 monatlich; Betriebskosten EUR 300 monatlich inklusive Heizkosten; Gesamtmiete EUR 750 monatlich. Kaution: 3 Bruttomonatsmieten. Mietdauer 5 Jahre. Verfuegbar ab sofort. Gasheizung, HWB 70,49. Last modified 2026-10-14 12:40.",
+      "notes": "The headline price of 450 EUR is misleading; the real rent is 750 EUR including operating costs and heating. Consider only if the applicants can afford it or want to share (two applicants, 375 EUR each)."
+    },
+    {
+      "id": "L021",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/charmante-altbau-wohnung-im-wohnhof-lkh-leoben-1854324617/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1854324617 (agency ref ID 26-00385)",
+      "title": "Charming period flat in the Wohnhof LKH Leoben (Top 8, attic)",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Vordernbergerstraße 73, 8700 Leoben (attic flat, 3rd floor)",
+        "nearest_university_or_distance": "Montanuniversität Leoben about 2.3 km per the listing text; bus stop Leoben Annaberg (lines 820, 822, 832, 6810); close to LKH Hochsteiermark and the city centre."
+      },
+      "price": {
+        "rent_monthly_eur": 447.8,
+        "utilities_included": "Total of 447.80 EUR/month = net rent 248.00 + operating costs 98.00 + heating 56.00 + VAT 45.80 (headline 380.60 = rent + operating costs with VAT, excluding heating). Electricity/energy NOT included.",
+        "deposit_eur": 1340,
+        "broker_fee_eur": null,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1787.8
+      },
+      "details": {
+        "size_sqm": 40,
+        "rooms": 1,
+        "furnished": "Fitted kitchen included, otherwise unfurnished",
+        "available_from": "2026-10 (immediately)",
+        "min_stay_months": 60,
+        "max_stay_months": 60,
+        "lease_type": "limited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Stefanie Körbisser Immobilien GmbH, Waagner-Biro-Straße 102, 8020 Graz (contact: MSc. Stefanie Körbisser)",
+        "contact": "Same agency as L005, L007, L009 and L016. Phones as pasted were garbled; most likely +43 316 282165 and +43 664 374 44 44 (the number given for viewing appointments). Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit (3 gross monthly rents); the listing invites a non-binding viewing appointment."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Condition 'renovated', but the description says the unit is currently being partly renovated",
+        "Hall, separate kitchen with fitted kitchenette, living/bedroom, bathroom with shower and WC; no balcony listed",
+        "Parquet and tile floors, satellite TV connection, high period-building ceilings, green courtyard",
+        "Optional car space at 30.59 EUR/month gross; cellar compartment depending on availability",
+        "District heating; energy class C (HWB 92)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 65,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Total cost of 447.80 EUR/month, a deposit of 1,340 EUR and about 1,788 EUR to move in: one of the cheapest private-market options in Leoben.",
+          "Close to the Montanuniversität Leoben (about 2.3 km per the listing); registered agency with ref ID and named contact.",
+          "Private-market rental, so the non-profit eligibility rules that may affect L001, L002 and L004 appear not to apply.",
+          "Fixed 5-year lease supports a permit file; good energy class (C) and 40 m² of space."
+        ],
+        "risks": [
+          "Top-floor attic flat; the listing does not mention a lift and shows no balcony.",
+          "The listing contradicts itself on condition ('renovated' versus 'currently partly being renovated'); no photos in the pasted text.",
+          "Rent may start in October, before the applicant can arrive (permit processing time): ask about a later start date.",
+          "Broker commission is not mentioned; clarify who pays.",
+          "Fixed 5-year term: check early termination terms. Agency may want an in-person viewing, income proof or an Austrian guarantor/bank account."
+        ],
+        "questions_to_ask": [
+          "Is there any broker commission, and who pays it?",
+          "Is the flat finished or still partly under renovation, and can you send photos or a video viewing?",
+          "Can the start date be delayed until the applicant arrives or the permit is granted, and what happens if the permit is refused (termination)?",
+          "Can a non-EU student abroad sign remotely? Is an Austrian bank account or guarantor required? Can the deposit be paid from abroad?",
+          "Is there a lift, and will the contract be usable for a student residence permit, with Meldezettel registration possible?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 447,80 EUR (Hauptmietzins 248 + BK 98 + Heizkosten 56 + USt 45,80). Kaution 1.340 (3 BMM). Mietdauer befristet auf 5 Jahre. Mietbeginn ab Oktober 2026. Top 8, 3. Obergeschoss, Dachgeschoss. Die Wohneinheit wird derzeit teilweise saniert. Last modified 2026-10-14 12:15.",
+      "notes": "Comparable to L009 (same attic type, same complex) and L016. Ask the agency about all five Wohnhof LKH flats (L005, L007, L009, L016, L021) in one message and compare terms; the key shared questions are remote signing, broker fee, start date and termination."
+    },
+    {
+      "id": "L022",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/entdecken-sie-gemuetliches-wohnen-in-st-marein-im-muerztal-2017485636/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 2017485636 (unit ref 1718/1748821)",
+      "title": "Cosy living in St. Marein im Mürztal (Top 1, 2 rooms, ground floor)",
+      "type": "apartment",
+      "location": {
+        "city": "Sankt Marein im Mürztal",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Landstraße 5-15, 8641 Sankt Marein im Mürztal (Top 1, ground floor)",
+        "nearest_university_or_distance": "Listing data says 'university <4 km', railway station <500 m, supermarket/doctor/pharmacy/school/bank <500 m, motorway access <1.5 km; good connection to Kapfenberg and the Mürz valley (Kapfenberg roughly 10-15 km, my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 449,
+        "utilities_included": "449 EUR includes net rent, operating costs (76.16 excl. VAT) and VAT (net rent + operating costs 408.18 excl. VAT + VAT 40.82). Heating, hot water and electricity are billed by actual consumption and are extra.",
+        "deposit_eur": 898,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1347
+      },
+      "details": {
+        "size_sqm": 49.78,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "deposit_note": "Deposit is '2 gross monthly rents', about 898 EUR based on the 449 EUR rent.",
+      "landlord": {
+        "type": "agency",
+        "name": "RIMMO Prime Vermittlungs GmbH, Handelskai 94-96, 1200 Vienna (contact: Benjamin Ghabras)",
+        "contact": "Tel 0664 232 3557, email benjamin.ghabras@prime-immobilien.at (the pasted phone numbers were garbled)",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated beyond the deposit (2 gross monthly rents).",
+        "Legal notice: a family or economic closeness exists between the broker and the third party being brokered (the landlord); the broker says it acts only for the landlord."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Ground floor in an older building in a 4-unit project, ready for occupancy (completion 2026-10-01)",
+        "Condition very good/good; layout not described in detail (2 rooms)",
+        "Parking available; quiet residential location with good infrastructure",
+        "Energy class D (HWB 109.6)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 60,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Private-market rental with an unlimited lease and no broker commission (the landlord pays any brokerage fee).",
+          "Lowest upfront cost among the realistic options: about 1,347 EUR with the first rent (deposit only 2 months' rent).",
+          "Railway station and shops within 500 m; Kapfenberg and the Mürz valley are within reach.",
+          "Vienna-based agency with named contact and email, which may make remote handling easier.",
+          "Non-profit eligibility rules do not appear to apply."
+        ],
+        "risks": [
+          "Small rural village: check commute to the applicant's university (listing says a university within 4 km, which should be verified; Leoben and Graz are much further).",
+          "Heating, hot water and electricity come on top of the 449 EUR and are billed by consumption; the heating system is not described.",
+          "Layout, photos and furnishing are not described (no kitchen unit mentioned).",
+          "Legal notice about a family or economic closeness between broker and landlord: not a problem in itself, but ask for transparency on who the landlord is.",
+          "Agency may require an in-person viewing, income proof or an Austrian guarantor/bank account; remote signing not stated.",
+          "The listing mixes 'older building' with 'new construction project' wording: ask what exactly was renovated."
+        ],
+        "questions_to_ask": [
+          "Who is the landlord, and is the lease unlimited with a normal notice period?",
+          "Can a non-EU student abroad sign remotely, and is a video viewing or photos possible? Is an Austrian bank account or guarantor required?",
+          "What are the average monthly heating, hot water and electricity costs? Is there a kitchen unit?",
+          "Can the contract be used for a student residence permit, and can the tenant register the address (Meldezettel)?",
+          "Which university is within 4 km, and what is the public transport connection to Kapfenberg/Bruck/Leoben?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Top 1 - 2-Zimmer-Wohnung, ca. 50 m2, Mietkosten 449 EUR (inkl. BK & USt.), Heizungs-, Warmwasser- und Stromkosten nach tatsaechlichem Verbrauch, Kaution 2 Bruttomonatsmieten, Provisionsfrei. Mietdauer unbefristet, verfuegbar ab sofort. Last modified 2026-10-16 18:30.",
+      "notes": "Good value and low upfront cost with an unlimited lease; the main open points are the commute and whether the agency allows remote signing. Three other units in the same project (59 m², 73 m², 86 m²: 519 to 719 EUR) are larger and costlier; send their links if wanted."
+    },
+    {
+      "id": "L023",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/wohneinheiten-zur-miete-jetzt-zugreifen-1135619457/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1135619457 (agency ref ID 1739324)",
+      "title": "Rental units: grab one now! (Wiener Straße 109, Mürzzuschlag, Top 16, 3 rooms)",
+      "type": "apartment",
+      "location": {
+        "city": "Mürzzuschlag",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Wiener Straße 109b, 8680 Mürzzuschlag (Top 16, 3rd floor, building has a lift)",
+        "nearest_university_or_distance": "Not stated. Bus stop 170 m, Mürzzuschlag station about 1 km, shops 0.7-1.2 km; Mürzzuschlag is a small town at the edge of Styria, far from Leoben and Graz (my own estimate: Leoben about 60 km, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 417.94,
+        "utilities_included": "417.94 EUR includes net rent, operating costs (151.29 excl. VAT), lift costs and VAT (net 379.94 + VAT 38.00). Heating and electricity are not mentioned and are probably extra.",
+        "deposit_eur": null,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": 1934.51,
+        "total_move_in_cost_eur": 2352.45
+      },
+      "financing_contribution": {
+        "amount_eur": 1934.51,
+        "note": "One-off financing contribution (Finanzierungsbeitrag), typically partly refundable when leaving. No separate deposit is stated. Also budget for buying and installing a kitchen: the flat has NO kitchen and the tenant must provide one."
+      },
+      "details": {
+        "size_sqm": 63.02,
+        "rooms": 3,
+        "furnished": "No (no kitchen included)",
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "teamneunzehn-Gruppe (T19-RE Real Estate GmbH & Co KG), Handelskai 94-96, 1200 Vienna (contact: Gloria Berger)",
+        "contact": "Email berger@teamneunzehn.at, tel 0676 852 243 610",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing.",
+        "Legal notice: the agency has a permanent economic relationship with the landlord (it is permanently commissioned to market the landlord's property portfolio). The text says both that it acts as a double broker and only for the landlord; ask which applies."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "3rd floor, lift in the building, built 1965; living room about 20 m², bedroom about 13 m², small room (Kabinett) about 10.6 m², kitchen space about 6.7 m², bathroom with bath, separate WC, storage room",
+        "Energy class C (HWB 52.8 kWh/m²/year)",
+        "Photos are sample photos; the flat is handed over as shown or equivalent",
+        "A second unit (2nd floor, Top 12, 423.91 EUR) is offered in the same project"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 48,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Unlimited lease, commission-free (the landlord pays the broker commission), available immediately.",
+          "Spacious 3-room flat at a low price per m² (6.63 EUR); could suit two or three students sharing (check occupancy rules).",
+          "Lift, good energy rating, bus stop 170 m away.",
+          "Agency with named contact and reference ID."
+        ],
+        "risks": [
+          "Remote location far from the main university towns: only suitable if the applicant studies or works nearby; check commute.",
+          "Upfront cost of about 2,352 EUR (financing contribution plus first rent) plus the cost of a kitchen, which the tenant must buy.",
+          "A financing contribution is typical for subsidised or non-profit housing: confirm that there are no eligibility conditions (residence status, income) for this flat.",
+          "Heating and electricity not stated; large flat means higher total costs for a single student.",
+          "Contradictory broker wording (double broker versus acting only for the landlord) and an economic relationship with the landlord: ask for transparency.",
+          "Photos are only samples, so the real condition cannot be assessed from abroad."
+        ],
+        "questions_to_ask": [
+          "Are there any eligibility criteria for this flat (residence status, income limits, main residence)? Can a non-EU student abroad rent it?",
+          "Is the 1,934.51 EUR financing contribution partly refundable, and is there a separate deposit? What is the full monthly cost including heating and electricity?",
+          "Can the contract be signed remotely, and are real photos or a video viewing possible? Is an Austrian bank account or guarantor required?",
+          "How many people may live in the flat, and can two or three students share and register there (Meldezettel)?",
+          "Will the contract be usable for a student residence permit?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Monatliche Miete: 417,94 Euro (inkl. Betriebskosten, Liftkosten und Umsatzsteuer). Finanzierungsbeitrag: 1.934,51 Euro. Provisionsfrei und unbefristet. Kuechen nicht Bestandteil der Mietwohnungen. Verfuegbar ab sofort. Baujahr 1965; HWB 52,8. Last modified 2026-10-16 16:20.",
+      "notes": "Low price per m² and unlimited lease, but remote location, a required own kitchen and a possible eligibility catch. One other unit in the same project is available (2nd floor, Top 12, 423.91 EUR); send its link if wanted."
+    },
+    {
+      "id": "L024",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/wohnen-mit-lebensqualitaet-1-zimmer-wohnung-in-aflenz-kurort-1991567770/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1991567770 (agency ref ID 961/36022)",
+      "title": "Living with quality of life: 1-room flat in Aflenz Kurort",
+      "type": "apartment",
+      "location": {
+        "city": "Aflenz Kurort",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "8623 Aflenz Kurort (street address not given; 2nd floor, in the centre of the village)",
+        "nearest_university_or_distance": "Not stated. Aflenz Kurort is a small health-resort and ski village; doctor, pharmacy, clinic, supermarket and bank within 500 m. Kapfenberg/Bruck an der Mur roughly 20-25 km and Leoben roughly 45 km away (my own estimates, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 529.85,
+        "utilities_included": "Total of 529.85 EUR/month including operating costs and heating (district heating): net rent 307.62 + operating costs 75.88 + heating 90.00 (473.50 excl. VAT) + VAT 56.35. The headline 421.85 EUR excludes heating. Electricity is extra.",
+        "deposit_eur": 1589.55,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 2119.4
+      },
+      "deposit_note": "Deposit is '3 gross monthly rents': about 1,589.55 EUR based on 529.85 EUR (or about 1,265.55 EUR if based on the 421.85 EUR headline). Clarify the base.",
+      "details": {
+        "size_sqm": 51.27,
+        "rooms": 1,
+        "furnished": "A new fitted kitchen will be installed after a rental offer is submitted; otherwise unfurnished",
+        "available_from": null,
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "s REAL Leoben (Sparkasse real estate), head office Sparkassenplatz 4, 8010 Graz (contact: Katarina Trajkovic)",
+        "contact": "Phones as pasted were garbled (100435010026419 and 200436648184145); most likely +43 50100 26419 and +43 664 8184145. Verify before use.",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "A rental offer (Mietangebot) must be submitted before the new kitchen is installed.",
+        "Legal notice: a family or economic closeness exists between the broker and the landlord."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Large main room usable as living and sleeping room, hall, bathroom with bathtub, separate WC, storage room",
+        "Freshly painted and vacated on handover; district heating",
+        "Energy HWB 125.2 kWh/m²/year (middling; heating costs 90 EUR/month)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 42,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Private-market rental through the s REAL brokerage (a large regional agency); non-profit eligibility rules do not appear to apply.",
+          "Landlord pays the broker commission (first-client principle); all-inclusive rent with heating, which is easy to budget.",
+          "Large single room (51 m²), new fitted kitchen, freshly painted."
+        ],
+        "risks": [
+          "Small rural resort village far from the main universities: only suitable if the applicant studies or works nearby; check commute and public transport.",
+          "Highest monthly cost for a one-room flat in the list (529.85 EUR plus electricity), and about 2,119 EUR to move in.",
+          "Availability date, lease type and term are not stated.",
+          "A rental offer is needed before the kitchen is installed; ask what the process and any binding effect are.",
+          "Agency may require an in-person viewing, income proof or an Austrian guarantor/bank account.",
+          "Legal notice about a family or economic closeness between broker and landlord: ask who the landlord is."
+        ],
+        "questions_to_ask": [
+          "What is the availability date, and is the lease unlimited or fixed-term? Can the start date match the applicant's arrival?",
+          "What is the deposit base (3 x 529.85 or 3 x 421.85)? Is there any commission for the tenant?",
+          "Can a non-EU student abroad sign remotely and submit the rental offer remotely, and is a video viewing possible? Is an Austrian bank account or guarantor required?",
+          "Will the contract be usable for a student residence permit, with Meldezettel registration possible?",
+          "What is the public transport connection from Aflenz Kurort to Kapfenberg/Bruck/Leoben?"
+        ],
+        "documents_likely_needed": [
+          "Rental offer (Mietangebot) to the landlord via the agency",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete EUR 529,85 (inkl. BK und Heizung); Kaution 3 Bruttomonatsmieten; HWB 125,2; Fernwaerme; neue Einbaukueche nach Vorlage eines Mietangebots; Wohnung wird frisch ausgemalt und geraeumt uebergeben. Last modified 2026-10-16 13:00.",
+      "notes": "Predictable all-inclusive cost, but expensive for a 1-room flat and in a rural resort village. Consider only if the applicant will be based in the Aflenz area."
+    },
+    {
+      "id": "L025",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/8790-eisenerz-vordernbergerstrasse-77-eg-3-1899694562/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1899694562",
+      "title": "8790 Eisenerz, Vordernbergerstraße 77/EG/3 (2 rooms, ground floor)",
+      "type": "apartment",
+      "location": {
+        "city": "Eisenerz",
+        "district": "Leoben, Styria",
+        "address": "Vordernbergerstraße 77, 8790 Eisenerz (Top 3, ground floor, lift in the building)",
+        "nearest_university_or_distance": "Not stated. Eisenerz is a small, remote mountain town; Leoben (nearest university town) is roughly 35-40 km away (my own estimate, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 393.27,
+        "utilities_included": "Not stated whether operating costs and heating are included in the 393.27 (price per m² 9.36 EUR); verify the full monthly cost including district heating and electricity.",
+        "deposit_eur": 1179.81,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1573.08
+      },
+      "details": {
+        "size_sqm": 42,
+        "rooms": 2,
+        "furnished": null,
+        "available_from": "by arrangement",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GIWOG Gemeinnützige Industrie-Wohnungs-AG (non-profit housing company), Welser Straße 41, 4060 Leonding; contact: Kundencenter Trofaiach (same landlord as L017)",
+        "contact": "Tel 050 8888 300 (Kundencenter Trofaiach); via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. As a non-profit housing company, eligibility rules may apply (not stated)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Renovated; ground floor with lift in the building and a cellar",
+        "District heating",
+        "No broker commission"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 42,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit housing company with a regional customer centre in Trofaiach; no broker fee.",
+          "Cheaper than L017 (393.27 versus 440.64 EUR; deposit 1,179.81 versus 1,321.92 EUR): about 1,573 EUR to move in with the first rent.",
+          "Renovated flat, ground floor with lift in the building; start date by arrangement, so it can fit the applicant's arrival."
+        ],
+        "risks": [
+          "Remote location, far from any university: only suitable for someone studying or working near Eisenerz, or willing to commute a long way.",
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown.",
+          "Lease type and total monthly cost (heating, operating costs) not stated.",
+          "Very little description or detail, no photos in the pasted text.",
+          "Landlord may require an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "What is the full monthly cost (operating costs, district heating, electricity)? Is the lease unlimited?",
+          "Are there eligibility criteria for applicants (residence status, income limits, main residence)? Can a non-EU student abroad rent it?",
+          "Is there any cooperative share or financing contribution on top of the 1,179.81 EUR deposit?",
+          "Can the start date be set to the applicant's arrival, and can the contract be signed remotely?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the housing company",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 393,27 (9,36/m²); Kaution 1.179,81; Maklerprovision keine; Zustand renoviert; Erdgeschoss, Fahrstuhl, Keller; Fernwaerme; verfuegbar nach Vereinbarung. Last modified 2026-10-16 11:10.",
+      "notes": "This looks like the flat actually at Vordernbergerstraße 77/EG/3; L017 (listed with 43 m² and 440.64 EUR, address 87, Top 2) is probably a similar flat in the neighbouring building. Ask GIWOG about both together, and whether other flats are free."
+    },
+    {
+      "id": "L026",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/singlewohnung-im-herzen-von-muerzzuschlag-1382672341/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1382672341 (agency ref ID 5048)",
+      "title": "Single flat in the heart of Mürzzuschlag",
+      "type": "apartment",
+      "location": {
+        "city": "Mürzzuschlag",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Kirchengasse 4, 8680 Mürzzuschlag (Top 3, 1st floor, old building)",
+        "nearest_university_or_distance": "Not stated. Very central: doctor <50 m, supermarket <100 m, bank <100 m, school <125 m, railway station <375 m. Mürzzuschlag is far from the main university towns (my own estimate: Leoben about 60 km, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 401.5,
+        "utilities_included": "401.50 EUR includes net rent, operating costs (85 EUR excl. VAT) and VAT (net 365.00 + VAT 36.50). The flat has gas heating; heating and electricity are not mentioned and are probably extra (verify).",
+        "deposit_eur": 1350,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1751.5
+      },
+      "details": {
+        "size_sqm": 40.03,
+        "rooms": 1,
+        "furnished": null,
+        "available_from": "2026-08-01 (already available)",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "agency",
+        "name": "Immobilien Rothbart GmbH, Koloman-Wallisch-Platz 4, 8600 Bruck an der Mur (contact: Peter Rothbart, BSc)",
+        "contact": "Tel +43 681 10897105 (as listed, 004368110897105); website immoroth.at",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing.",
+        "Legal notice: a family or economic closeness exists between the broker and the landlord; the broker says it acts only for the landlord (landlord pays the commission)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "1st floor, one room, bathroom with shower, separate WC, cellar compartment",
+        "Gas heating; very central location",
+        "Little description in the listing and no photos in the pasted text"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 50,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Private-market rental via a local agency; non-profit eligibility rules do not appear to apply.",
+          "Landlord pays the broker commission; moderate cost: about 1,752 EUR to move in with the first rent.",
+          "Very central, everything within a few hundred metres, railway station <375 m.",
+          "Available now, so no waiting."
+        ],
+        "risks": [
+          "Mürzzuschlag is far from the main university towns: only suitable if the applicant studies or works nearby; check commute.",
+          "Lease type and term are not stated; heating (gas) and electricity are probably extra, so the real monthly cost is unknown.",
+          "Very short listing: no layout, condition or equipment details, no photos in the pasted text.",
+          "Legal notice about a family or economic closeness between broker and landlord: ask who the landlord is.",
+          "Agency may require an in-person viewing, income proof or an Austrian guarantor/bank account; remote signing not stated."
+        ],
+        "questions_to_ask": [
+          "Is the lease unlimited or fixed-term? Is the flat still available now?",
+          "What are the monthly gas heating and electricity costs? Is there a kitchen unit?",
+          "Can a non-EU student abroad sign remotely, and are photos or a video viewing possible? Is an Austrian bank account or guarantor required?",
+          "Will the contract be usable for a student residence permit, and can the tenant register the address (Meldezettel)?",
+          "Who is the landlord, and is there any commission for the tenant?"
+        ],
+        "documents_likely_needed": [
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)",
+          "Possibly proof of Austrian bank account"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtbelastung 401,50 EUR (Miete excl. USt 365 inkl. BK 85, USt 36,50); Kaution 1.350; 1. Stock, ca. 40 m2, Altbau, Gasheizung; verfuegbar ab 01.08.2026. Last modified 2026-10-16 11:10.",
+      "notes": "Simple, central and moderately priced, but sparse information and a remote location. Consider only if the applicant will be based in the Mürzzuschlag area."
+    },
+    {
+      "id": "L027",
+      "added_date": "2026-10-18",
+      "status": "rejected",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/krieglach-gefoerderte-miete-oder-gefoerderte-miete-mit-kaufoption-1-zimmer-1388745241/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1388745241 (landlord ref ID 110601_0004)",
+      "title": "Krieglach: subsidised rent OR subsidised rent with purchase option, 1 room",
+      "type": "apartment",
+      "location": {
+        "city": "Krieglach",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Höllweg 2/4, Krieglach (2nd floor)",
+        "nearest_university_or_distance": "Not stated. Krieglach is a small town in the Mürz valley; the main university towns are far away (my own estimate: Leoben about 45 km, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 410,
+        "utilities_included": "Pure-rent option: 410 EUR/month; purchase-option variant: 399 EUR/month. Rent includes operating costs, advance heating payment (aconto) and the car space; excludes electricity. A kitchen fee of about 50 EUR/month comes on top. Rent depends on the interest rate and on the Land Steiermark subsidy.",
+        "deposit_eur": 2000,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": 3228,
+        "total_move_in_cost_eur": 2410
+      },
+      "options": {
+        "pure_rent": {"monthly_rent_eur": 410, "deposit_eur": 2000},
+        "rent_with_purchase_option": {"monthly_rent_eur": 399, "land_costs_eur": 3228, "note": "Land costs are refunded when moving out, minus 1% per year; the flat can be bought after 5 years. An unlimited lease is issued and the tenant can terminate with 3 months' notice."}
+      },
+      "details": {
+        "size_sqm": 38.2,
+        "rooms": 1,
+        "furnished": "Kitchen provided against a monthly kitchen fee (about 50 EUR)",
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unlimited",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "ÖWG Wohnbau, Moserhofgasse 14, 8010 Graz (contact: Mateo Kasalo; same landlord as L006 and L018)",
+        "contact": "Tel +43 316 80551548 (as listed, 004331680551548); viewing by appointment with the sales team",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "Subsidised flat: tenant must be an Austrian citizen, an EU citizen or equivalent, or have lived more than 5 years in Austria with a valid work permit.",
+        "Net annual household income limit: 49,600 EUR for 1 person, 74,400 EUR for 2 people, plus 6,570 EUR per additional person.",
+        "The flat must be the tenant's main residence."
+      ],
+      "features": [
+        "2nd floor: dining/cooking area, living/bedroom, large bathroom with WC, hall, car space included",
+        "District heating; built 1996; energy class D (HWB 146.7)",
+        "Commission-free; one dog allowed (no listed breeds)"
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": "Viewing possible by appointment; not stated whether required",
+      "assessment": {
+        "verdict": "unsuitable",
+        "score": 5,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Genuine housing company with named contact and reference ID.",
+          "Commission-free, car space and heating advance included in the rent."
+        ],
+        "risks": [
+          "Eligibility rules explicitly exclude the likely applicants: non-EU nationals need more than 5 years of residence in Austria with a work permit.",
+          "Subsidised flats must be the main residence and have income limits.",
+          "High upfront cost (2,000 EUR deposit, or 3,228 EUR land costs), plus an additional kitchen fee of about 50 EUR/month.",
+          "Remote location."
+        ],
+        "questions_to_ask": [],
+        "documents_likely_needed": []
+      },
+      "raw_text_excerpt": "Es handelt sich um eine gefoerderte Wohnung ... 1) Oesterreichische Staatsbuergerschaft, EU-Buerger oder gleichgestellte Personen bzw. Aufenthalt laenger als 5 Jahre in Oesterreich mit aufrechter Arbeitsbewilligung. 2) Einkommensgrenzen ... 3) Hauptwohnsitz. Reine Miete 410, Kaution 2000; Miete mit Kaufoption 399, Grundstueckskosten 3228. Last modified 2026-10-16 10:55.",
+      "notes": "Marked 'rejected' for the same reason as L006 and L018 (same landlord, same eligibility rule). All ÖWG 'geförderte Miete' listings have the same restriction."
+    },
+    {
+      "id": "L028",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/leoben/leoben-3-zimmer-stahlstrasse-9-8-1085964545/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1085964545",
+      "title": "Leoben - 3 rooms - Stahlstraße 9/8",
+      "type": "apartment",
+      "location": {
+        "city": "Leoben",
+        "district": "Leoben, Styria",
+        "address": "Stahlstraße 9/8, 8700 Leoben (Top 8, 3rd floor, lift in the building)",
+        "nearest_university_or_distance": "Not stated, but it is in the city of Leoben itself, home of the Montanuniversität; check the exact distance on a map."
+      },
+      "price": {
+        "rent_monthly_eur": 414.79,
+        "utilities_included": "Not stated whether operating costs and heating are included in the 414.79 (7.83 EUR per m²); verify the full monthly cost including heating and electricity.",
+        "deposit_eur": 1244.37,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1659.16
+      },
+      "details": {
+        "size_sqm": 53,
+        "rooms": 3,
+        "furnished": null,
+        "available_from": "immediately",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "GIWOG Gemeinnützige Industrie-Wohnungs-AG (non-profit housing company), Welser Straße 41, 4060 Leonding; contact: Kundencenter Trofaiach (same landlord as L017 and L025)",
+        "contact": "Viewing and information: Lukas Weinhappl, tel 050 8888 367; customer centre tel 050 8888 300",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. As a non-profit housing company, eligibility rules may apply (not stated)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Newly renovated, 3 rooms, bathroom with walk-in shower, quiet location",
+        "3rd floor with lift in the building and a cellar",
+        "Energy figure shown as HWB 4 kWh/m²/year, which looks implausibly low (probably a data error): verify the energy certificate"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 58,
+        "scam_risk": "low",
+        "reasons_for": [
+          "In Leoben itself, the main university town of the region, so no long commute.",
+          "Newly renovated 3-room flat with lift at a low price (414.79 EUR, deposit 1,244.37 EUR, about 1,659 EUR to move in with the first rent).",
+          "Established non-profit housing company with a regional customer centre; no broker commission is mentioned; available immediately.",
+          "Three rooms could suit two or three students sharing (check occupancy rules)."
+        ],
+        "risks": [
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown (see L004, L006 and L018 for similar rules).",
+          "Lease type and total monthly cost (operating costs, heating) not stated.",
+          "Large flat means higher total costs for a single student.",
+          "Very little description, no photos in the pasted text; the energy figure looks wrong.",
+          "Landlord may require an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Are there eligibility criteria for applicants (residence status, income limits, main residence)? Can a non-EU student abroad rent it?",
+          "What is the full monthly cost (operating costs, heating, electricity)? Is the lease unlimited or fixed-term?",
+          "Is there any cooperative share or financing contribution on top of the 1,244.37 EUR deposit?",
+          "How many people may live in the flat (is it open to two or three students sharing)?",
+          "Can the start date be set to the applicant's arrival, and can the contract be signed remotely?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the housing company",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Rent 414,79 (7,83/m²); Kaution 1.244,37; neu sanierte Wohnung in ruhiger Lage, 3 Raeume, Bad mit begehbarer Dusche; 3. Stock, Fahrstuhl, Keller; verfuegbar ab sofort; HWB 4. Last modified 2026-10-16 10:15.",
+      "notes": "The best location among the non-profit flats (inside Leoben), so worth asking GIWOG about eligibility early: it could become one of the top candidates if the criteria allow non-EU students. Ask about L017 and L025 in the same message."
+    },
+    {
+      "id": "L029",
+      "added_date": "2026-10-18",
+      "status": "new",
+      "url": "https://www.willhaben.at/iad/immobilien/d/mietwohnungen/steiermark/bruck-muerzzuschlag/3-zimmer-wohnung-in-st-barbara-im-muerztal-1627425160/",
+      "source_platform": "willhaben",
+      "listing_code": "willhaben 1627425160 (landlord ref ID 132224)",
+      "title": "3-room flat in St. Barbara im Mürztal",
+      "type": "apartment",
+      "location": {
+        "city": "Wartberg im Mürztal (St. Barbara im Mürztal)",
+        "district": "Bruck-Mürzzuschlag, Styria",
+        "address": "Dorfstraße 82, 8661 Wartberg im Mürztal (the title says St. Barbara im Mürztal; the listing uses both names)",
+        "nearest_university_or_distance": "Not stated. Small village in the Mürz valley; Bruck an der Mur roughly 15-20 km, Leoben roughly 35-40 km (my own estimates, verify)."
+      },
+      "price": {
+        "rent_monthly_eur": 438.28,
+        "utilities_included": "Not clear. Headline 'Gesamtmiete incl. VAT' is 438.28; separately listed operating costs 98.55 EUR (probably inside the 438.28, but verify). Heating and electricity not mentioned.",
+        "deposit_eur": 1314.84,
+        "broker_fee_eur": 0,
+        "other_upfront_fees_eur": null,
+        "total_move_in_cost_eur": 1753.12
+      },
+      "details": {
+        "size_sqm": 61.17,
+        "rooms": 3,
+        "furnished": null,
+        "available_from": "immediately (the text mentions 1 July 2026 as the earlier rental start)",
+        "min_stay_months": null,
+        "max_stay_months": null,
+        "lease_type": "unknown",
+        "registration_meldezettel_possible": null
+      },
+      "landlord": {
+        "type": "company",
+        "name": "ENW Gemeinnützige Wohnungs-Ges.m.b.H. (non-profit housing company, part of the Wohnbaugruppe like the Ennstal cooperative), Theodor-Körner-Straße 120, 8010 Graz (contact: Manuela Raith)",
+        "contact": "Tel 03172 2869475 (as listed, 031722869475); via the willhaben contact form",
+        "language": "German"
+      },
+      "requirements_stated": [
+        "None stated in the listing. As a non-profit housing company, eligibility rules may apply (not stated)."
+      ],
+      "remote_signing_possible": null,
+      "viewing_required_in_person": null,
+      "features": [
+        "Living room, bedroom, children's room, kitchenette, hall, bathroom/WC, storage room, cellar compartment",
+        "Energy HWB 70 kWh/m²/year (good)",
+        "Low price per m² (7.16 EUR)"
+      ],
+      "assessment": {
+        "verdict": "conditional",
+        "score": 42,
+        "scam_risk": "low",
+        "reasons_for": [
+          "Established non-profit housing company, available immediately.",
+          "Spacious 3-room flat at a low price per m²; could suit two or three students sharing (check occupancy rules).",
+          "Good energy rating; moderate upfront cost (about 1,753 EUR with the first rent)."
+        ],
+        "risks": [
+          "Non-profit landlord: eligibility conditions (residence status, income limits, main residence) may apply and are unknown (see L004, L006 and L018 for similar rules).",
+          "Small village far from the main university towns: only suitable if the applicant studies or works nearby; check commute and public transport.",
+          "Total monthly cost unclear (heating and electricity not stated); lease type not stated.",
+          "Large flat means higher total costs for a single student.",
+          "Very little description and no photos in the pasted text.",
+          "Landlord may require an application, in-person steps or an Austrian bank account, which is hard from Nigeria."
+        ],
+        "questions_to_ask": [
+          "Are there eligibility criteria for applicants (residence status, income limits, main residence)? Can a non-EU student abroad rent it?",
+          "What is the full monthly cost including heating and electricity, and is the lease unlimited?",
+          "Is there any cooperative share or financing contribution on top of the 1,314.84 EUR deposit?",
+          "How many people may live in the flat (is it open to two or three students sharing)?",
+          "Can the start date be set to the applicant's arrival, and can the contract be signed remotely?",
+          "Will you issue a contract usable for a student residence permit, and can the tenant register the address (Meldezettel)?"
+        ],
+        "documents_likely_needed": [
+          "Application form of the housing company",
+          "Passport copy",
+          "Admission letter or proof of enrolment/application",
+          "Proof of funds or income (or guarantor)"
+        ]
+      },
+      "raw_text_excerpt": "Gesamtmiete inkl. MWSt 438,28 (7,16/m²); Kaution 1.314,84; Nebenkosten 98,55; 3 Zimmer, 61,17 m2; HWB 70; verfuegbar ab sofort. Last modified 2026-10-17 02:18.",
+      "notes": "Same group as the Ennstal cooperative (L002, L010-L014): ask about eligibility at the same time. Remote location and unknowns put it mid-table."
+    }
+  ],
+  "schema_template": {
+    "id": "L001",
+    "added_date": "YYYY-MM-DD",
+    "status": "new",
+    "url": null,
+    "source_platform": null,
+    "title": null,
+    "type": "dorm | WG_room | studio | apartment | sublet | other",
+    "location": {
+      "city": null,
+      "district": null,
+      "address": null,
+      "nearest_university_or_distance": null
+    },
+    "price": {
+      "rent_monthly_eur": null,
+      "utilities_included": null,
+      "deposit_eur": null,
+      "broker_fee_eur": null,
+      "other_upfront_fees_eur": null,
+      "total_move_in_cost_eur": null
+    },
+    "details": {
+      "size_sqm": null,
+      "rooms": null,
+      "furnished": null,
+      "available_from": null,
+      "min_stay_months": null,
+      "max_stay_months": null,
+      "lease_type": "unlimited | limited | sublet | unknown",
+      "registration_meldezettel_possible": null
+    },
+    "landlord": {
+      "type": "private | company | student_dorm_operator | agency | unknown",
+      "name": null,
+      "contact": null,
+      "language": null
+    },
+    "requirements_stated": [],
+    "remote_signing_possible": null,
+    "viewing_required_in_person": null,
+    "assessment": {
+      "verdict": null,
+      "score": null,
+      "scam_risk": "low | medium | high | unknown",
+      "reasons_for": [],
+      "risks": [],
+      "questions_to_ask": [],
+      "documents_likely_needed": []
+    },
+    "raw_text_excerpt": null,
+    "notes": null
+  }
+}
